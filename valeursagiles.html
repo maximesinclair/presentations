@@ -1,0 +1,775 @@
+<!doctype html>
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Initiation aux méthodes agiles</title>
+
+    <meta name="description" content="A simple presentation of the values behind agile methods.">
+    <meta name="author" content="Maxime">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+    <style type="text/css">
+      section.lightbackground, section.lightbackground h1, section.lightbackground h2 {
+        color: #555;
+      }
+      ul.small {
+        font-size: smaller;
+      }
+      /* No image border */
+      div.slides section img {
+        border: 0;
+      }
+      /* small align */
+      div.slides section small {
+        vertical-align: middle;
+      }
+      /* No image background */
+      section#adaptation section img {
+        background-color: transparent;
+        box-shadow: none;
+      }
+      section#pratiques .def {
+        background-color: blue;
+        text-align: left;
+      }
+      section#pratiques .goal {
+        background-color: green;
+        text-align: left;
+      }
+    </style>
+    <!-- Code syntax highlighting
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    -->
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section id="title">
+          <section>
+            <h1>Découverte des valeurs agiles</h1>
+            <p>
+              <small>Créé avec &hearts;&hearts;&hearts; en mai 2015</small>
+            </p>
+          </section>
+          <section>
+            <h2>Plan</h2>
+            <ol>
+              <li>En 2 mots</li>
+              <li>Quelques rappels historiques</li>
+              <li>Le manifeste</li>
+              <li>Les 4 valeurs, l'une après l'autre...</li>
+              <li>Quelques pratiques</li>
+              <li>Pause</li>
+              <li>Surprise !</li>
+            </ol>
+          </section>
+        </section>
+        <!-- En 2 mots -->
+        <section id="inshort">
+          <section>
+             <h1>En 2 mots</h1>
+             <p><small>Pour ceux qui devront partir avant la fin</small></p>
+           </section>
+          <section data-autoslide="10000">
+            <h2>Définition en une phrase</h2>
+            <blockquote style="text-align:left" cite="http://creativeheldstab.com/agile-in-one-sentence-by-andy-hunt/">
+              <p style="text-align:left">&ldquo;Agile development uses feedback to make constant adjustments in a highly
+              collaborative environment.&rdquo;</p>
+              <div style="text-align:right">&mdash; Andy Hunt</div>
+            </blockquote>
+            <p style="text-align:left" class="fragment"><small>Le développement agile utilise les retours (rétroactions) pour s'adapter en permanence dans un environnement hautement collaboratif.</small></p>
+          </section>
+          <section>
+            <h2>En 2 minutes</h2>
+            <p>C'est ce qui a été demandé à <a href="http://www.agiliste.fr/2-minutes-pour-presenter-l-approche-agile/" >Florent Lothon&nbsp;<img src="i/flothon.png"></a>
+            <br>devant 1500 personnes au théatre Mogador.</p>
+            <p>&nbsp;</p>
+            <p style="text-align:left">Question de l’animateur :</p>
+            <blockquote>Florent, qu’est ce que la ‘méthode agile’ ?</blockquote>
+            <div class="fragment">
+            <p style="text-align:left">Réponse :</p>
+            <blockquote>Il s’agit d’une méthodologie ...</blockquote>
+            </div>
+            <aside class="notes">
+            <p>Il s’agit d’une méthodologie utilisée pour mettre au point des produits logiciels.
+            Une méthodologie qui part du principe que dans ce type de projet, les imprévus sont inévitables et qu’il est
+            très difficile de savoir à l’avance ce dont un utilisateur a réellement besoin. Partant de ces principes,
+            l’approche agile, à travers son mode de fonctionnement, offre une grande capacité d’adaptation aux imprévus
+            et aux besoins des utilisateurs. D’où le terme agile.</p>
+            <p>Et plus qu’une simple méthodologie, il s’agit d’un véritable état d’esprit porteur de valeurs et de
+            principes qui tournent autour de la collaboration, la communication, l’auto-organisation des équipes, la
+            transparence, l’amélioration continue et repose sur un style de management basé sur la confiance. Le manager
+            agile met son pouvoir au service de son équipe afin d’aider cette dernière à atteindre ses objectifs. C’est
+            d’ailleurs ce qui me plait le plus dans cette approche car ça met l’épanouissement de chacun au service des
+            résultats. Autrement dit, tout le monde est gagnant.</p>
+            <p>Pour finir, il faut savoir que cette approche touche désormais d’autres secteurs que celui du développement de logiciel.</p>
+            </aside>
+          </section>
+        </section>
+        <!-- Rappels historiques -->
+        <section id="history">
+          <section data-background="i/greenscreen.png">
+            <h1>Quelques rappels historiques</h1>
+            <p>
+              <small>Pour ceux qui sont nés après le <a href="http://fr.wikipedia.org/wiki/Epoch">1/1/1970</a></small>
+            </p>
+          </section>
+          <section>
+            <h2>Au début, tout est facile</h2>
+            <p>Jusqu'à la fin des années 1960, le logiciel:</p>
+            <ul>
+              <li>est essentiellement codé en assembleur</li>
+              <li>consiste en des traitements batchs</li>
+              <li>automatise des processus répétitifs</li>
+              <li>économise les bits et les cycles CPU</li>
+            </ul>
+            <p><img src="i/punch-card.png"></p>
+          </section>
+          <section id="firstcrisis">
+            <h2>La première crise du logiciel</h2>
+            <p>Fin des années 60, début des 70</p>
+            <ul>
+              <li>En 10 ans, la puissance des ordinateurs est multiplié par 100, et la productivité du développement par 4</li>
+              <li>Premier colloque de Génie Logiciel</li>
+              <li>Invention du développement en cascade</li>
+              <li>On cherche à industrialiser le processus de développement</li>
+            </ul>
+            <aside class="notes">
+              <ul>
+                <li>Loi de Moore, arrivée du Time Sharing, généralisation des disques durs</li>
+                <li>L'IBM 360 est livré avec 1 million de LOC</li>
+                <li>Colloque de Garmisch (RFA) en octobre 1968 financé par l'OTAN</li>
+                <li>En aout 1970, Winston W. Royce publie l'article "Managing the development of large software systems"
+                    où il décrit le modèle de développement en cascade.</li>
+                <li>Objectif de découper en étapes pour mieux maîtriser.</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h2>La crise encore</h2>
+            <p>Dans les années 90, rien n'a changé (enfin presque)</p>
+            <ul>
+              <li>La micro-informatique est dans les entreprises</li>
+              <li>Les outils d'industrialisation du développement se sont développés
+              <ul class="small">
+                <li>Les langages COBOL, C, Smalltalk, C++, ADA et bientôt Java</li>
+                <li>Les Ateliers de Génie Logiciel, les éditeurs, débogueurs, le makefile</li>
+                <li>Les outils de gestion de versions, des exigences, des tests</li>
+              </ul></li>
+              <li>Les méthodes aussi
+                <ul class="small">
+                  <li>La programmation structurée, SADT,</li>
+                  <li>Cap Gemini SDM, SSADM,</li>
+                  <li>MERISE en France</li>
+                </ul>
+              </li>
+            </ul>
+            <aside class="notes">
+              <ul>
+                <li>L'interface graphique Macintosh 1984, Windows, OS/2 (fenêtres,souris) s'impose</li>
+                <li>Le réseau de télécommunication pointe son nez</li>
+                <li>Smalltalk, C++ languages objets</li>
+                <li>ADA appel d'offre du DoD en 1977, conçu comme un langage universel, fiable et sûr</li>
+                <li>Qui dit AGL, dit L4G (CASE en english), AD/Cycle d'IBM</li>
+                <li>Gestion des versions SCCS, RCS, PVCS, CVS</li>
+                <li>SDM pour System Development Methodology</li>
+                <li>SSADM pour Structured systems analysis and design method créé au UK</li>
+              </ul>
+            </aside>
+          </section>
+          <section id="chaosreport">
+            <h2>La crise encore</h2>
+            <p>Le Standish Group publie en 1995 le premier Chaos Report</p>
+            <blockquote>
+              &ldquo;Software development projects are in chaos, and we can no longer imitate the three
+              monkeys -- hear no failures, see no failures, speak no failures.&rdquo;
+            </blockquote>
+            <ul>
+              <li>250 milliards de $ dépensés par an aux USA</li>
+              <li>Seuls 16,2% des projets sont on-time et on-budget</li>
+            </ul>
+            <aside class="notes">
+            </aside>
+          </section>
+          <section>
+            <h2>La métaphore du pont</h2>
+            <p><img src="i/bridgechaosreport.png"></p>
+            <p><small>Cette photo illustre la première page du premier Chaos Report.</small></p>
+          </section>
+          <section>
+            <h2>La métaphore du pont</h2>
+            <p>
+              Le développement logiciel est assimilé à une pratique d'ingénierie telle que la construction
+              ou la mécanique.
+            </p>
+            <ul>
+              <li>La conception est la phase créative qu'il est difficile d'estimer.</li>
+              <li>La fabrication est la phase la plus coûteuse.</li>
+              <li>Donc, une conception très détaillée permet de garantir une fabrication optimale.</li>
+            </ul>
+            <aside class="notes">
+            </aside>
+          </section>
+          <section data-background="i/waterfall.png">
+            <h2>Au bout du pont</h2>
+            <ul class="fragment">
+              <li>Un découpage en multiple phases.</li>
+              <li>Des phases découpées en étapes.</li>
+              <li>Des documents en abondance et jamais à jour.</li>
+              <li>Des équipes de spécialistes sans vue d'ensemble.</li>
+              <li>De la sous-traitance, de l'off-shore.</li>
+              <li>Un effet tunnel.</li>
+              <li>Beaucoup d'énergie passée à estimer, planifier, découper, affecter&nbsp;&hellip;</li>
+            </ul>
+            <aside class="notes">
+
+            </aside>
+          </section>
+          <section>
+            <h2>Une ingénierie pas comme les autres</h2>
+            <p>
+              Un groupe d'irréductibles skieurs refuse<br>
+              l'analogie de la construction.
+            </p>
+            <p class="fragment">
+              Coder n'est pas fabriquer.<br>
+              Fabriquer, c'est compiler.<br><br>
+              La fabrication est la phase la moins coûteuse, elle est automatisée.
+              La conception, phase créative, qui exige de la compétence, va jusqu'à l'écriture du code.
+            </p>
+            <aside class="notes">
+              <ul>
+                <li>Jack Reeves suggère qu'en réalité le code source est un document de conception</li>
+                <li>http://www.bleading-edge.com/Publications/C%2B%2BJournal/Cpjour2.htm</li>
+              </ul>
+            </aside>
+          </section>
+          <section id="lightmethods">
+            <h2>Les méthodes légères</h2>
+            <p>
+              En réaction aux "plan-driven methodologies" ou "méthodes&nbsp;lourdes"
+            </p>
+            <ul>
+              <li>Unified Process [1994]</li>
+              <li>Dynamic systems development method ou DSDM [1994]</li>
+              <li>Scrum [1995]</li>
+                <ul class="small"><li>par Ken Schwaber</li></ul>
+              <li>eXtreme Programming [1996]</li>
+                <ul class="small"><li>par Kent Beck, Ward Cunningham et Ron Jeffries</li></ul>
+              <li>Crystal Clear [1996]</li>
+                <ul class="small"><li>par Alistair Cockburn</li></ul>
+              <li>Feature-Driven Development ou FDD [1997]</li>
+                <ul class="small"><li>par Jeff De Luca</li></ul>
+            </ul>
+            <aside class="notes">
+              <ul>
+                <li>DSDM cherche à structurer le développement RAD</li>
+                <li>XP est très orienté technique de développement, tests unitaires, pair programming</li>
+              </ul>
+            </aside>
+          </section>
+        </section>
+        <section id="manifest">
+          <section data-background="i/snowbirdgondola.jpg">
+            <h1>Le manifeste agile</h1>
+            <p><small>C'est où les pistes ?</small></p>
+          </section>
+          <section class="lightbackground" data-background="i/manifeste.jpg">
+            <h2>2 jours à la montagne</h2>
+            <p>
+              Du 11 au 13 février 2001, 17 "organizational anarchists" se retrouvent à Snowbird dans l'Utah,
+              pour discuter méthodes de développement logiciel.
+            </p>
+            <p>
+              Ils aboutissent à la signature du <strong>Manifeste Agile</strong><br>
+              <small>même si Martin Fowler, qui est anglais, estime que la plupart des américains ne savent pas
+              prononcer <i>agile</i> correctement.</small>
+            </p>
+          </section>
+          <section data-background="#5488C3">
+            <h2>The Agile Manifesto</h2>
+            <p>
+              We are uncovering better ways of developing software by doing it and helping others do it.<br>
+              Through this work we have come to value:
+            </p>
+            <p>
+              <strong>Individuals and interactions</strong> over <small>processes and tools</small><br>
+              <strong>Working software</strong> over <small>comprehensive documentation</small><br>
+              <strong>Customer collaboration</strong> over <small>contract negotiation</small><br>
+              <strong>Responding to change</strong> over <small>following a plan</small><br>
+              <br>
+              That is, while there is value in the items on the right, we value the items on the left more.
+            </p>
+          </section>
+          <section data-background="#5488C3">
+            <h2>Le Manifeste Agile</h2>
+            <p>
+              Nous découvrons comment mieux développer des logiciels par la pratique et en aidant les autres à le faire.<br>
+              Ces expériences nous ont amenés à valoriser :
+            </p>
+            <p>
+              <strong>Les individus et leurs interactions</strong> plus que <small>les processus et les outils</small><br>
+              <strong>Des logiciels opérationnels</strong> plus qu'<small>une documentation exhaustive</small><br>
+              <strong>La collaboration avec les clients</strong> plus que <small>la négociation contractuelle</small><br>
+              <strong>L’adaptation au changement</strong> plus que <small>le suivi d'un plan</small><br>
+              <br>
+              Nous reconnaissons la valeur des seconds éléments, mais privilégions les premiers.
+            </p>
+          </section>
+        </section>
+        <section id="individuals">
+          <section data-background="#61380B">
+            <h1>Les individus et leurs intéractions</h1>
+            <p><small>Le développement est une activité humaine</small></p>
+          </section>
+          <section id="competence" data-background="#61380B">
+            <h2>La compétence de l'individu</h2>
+            <p>Le développement logiciel est une activité créative.</p>
+            <p>Les individus ne sont pas des ressources interchangeables.</p>
+            <p>Souvent, le débutant est expert.</p>
+            <aside class="notes">
+              <ul>
+                <li>Arrêtons de parlez en JH, nous sommes des artisans</li>
+                <li>L'agile ne valorise pas les experts, au contraire</li>
+              </ul>
+            </aside>
+          </section>
+          <section data-background="#61380B">
+            <h2>Limitons le WIP</h2>
+            <p><img src="i/highwip.gif"></p>
+            <aside class="notes">
+              On est plus productif lorsqu'on travaille sur une seule tâche à la fois.
+              Et on mets 1/4 d'heure à reprendre un travail interrompu.
+            </aside>
+          </section>
+          <section data-background="#61380B">
+            <h2>La motivation est essentielle</h2>
+            <p>Qu'est-ce qui motive un travailleur du savoir ?</p>
+            <p class="fragment"><img src="i/todolist.png"></p>
+            <aside class="notes">
+              La motivation est liée à l'atteinte des objectifs
+            </aside>
+          </section>
+          <section data-background="#61380B">
+            <h2>Le travail en équipe</h2>
+            <p>Plusieurs cerveaux font mieux qu'un seul.</p>
+            <p><img src="i/plusieurs.png"></p>
+            <p>Etre agile, c'est ne jamais travailler seul.</p>
+          </section>
+          <section data-background="#61380B">
+            <h2>La bonne taille d'équipe</h2>
+            <ul>
+              <li>Un seul, c'est pas une équipe.</li>
+              <li>Deux, c'est un couple.</li>
+              <li>Trois, c'est un contre deux.</li>
+              <li>Quatre, c'est un couple contre un autre.</li>
+              <li>au delà de Neuf, c'est compliqué d'avoir une seule conversation à table.</li>
+            </ul>
+          </section>
+          <section data-background="#61380B">
+            <h2>La communication</h2>
+            <p>
+              <img src="i/communication.gif">
+            </p>
+            <aside class="notes">
+              La conversation face à face devant un tableau est la plus efficace.<br>
+              http://www.agilemodeling.com/essays/communication.htm
+            </aside>
+          </section>
+          <section data-background="#61380B">
+            <h2>L'environnement</h2>
+            <ul>
+              <li>La colocation de l'équipe est importante.</li>
+              <li>Un environnement adapté à la collaboration.</li>
+              <li>Un espace pour les réunions.</li>
+              <li>Un espace pour les tableaux.</li>
+              <li>Les outils et les processus doivent être adaptés à la capacité de l'équipe.</li>
+            </ul>
+          </section>
+          <section data-background="#61380B">
+            <h2>La transparence</h2>
+            <p>
+              Bienveillance. Confiance. Courage.<br>
+              Liberté de parole. Sincérité. Honnêteté.
+            </p>
+            <p class="fragment current-visible">
+              Quand la communication est-elle la plus efficace ?<br>
+              Quand les gens désirent travailler ensemble et font ce qu'il faut pour réaliser l'objectif.</p>
+          </section>
+        </section>
+        <section id="software">
+          <section class="lightbackground" data-background="#FFF">
+            <h1>Focus sur le logiciel</h1>
+            <p><small>Parce que c'est le produit</small></p>
+          </section>
+          <section class="lightbackground" data-background="#FFF">
+            <h2>Les 4 dimensions du projet idéal</h2>
+            <p><img src="i/4dim1.png"></p>
+          </section>
+          <section class="lightbackground" data-background="#FFF">
+            <h2>Les 4 dimensions du projet réel</h2>
+            <p><img src="i/4dim2.png"></p>
+          </section>
+          <section class="lightbackground" data-background="#FFF">
+            <h2>La qualité n'est pas négociable</h2>
+            <p><img src="i/4dim3.png"></p>
+          </section>
+          <section class="lightbackground" data-background="#FFF">
+            <h2>Excellence technique</h2>
+            <p>Tests automatiques</p>
+            <p>Intégration continue</p>
+            <p>Code propre</p>
+            <p>Correction des bugs au plus tôt</p>
+            <aside class="notes">
+              Principe du "No broken window"
+            </aside>
+          </section>
+          <section id="kiss" class="lightbackground" data-background="#FFF">
+            <h2>Simplicité</h2>
+            <p>
+              KISS : Keep It Simple, Stupid<br>
+              ou l'art de maximiser le travail non fait.
+            </p>
+            <p style="text-align: left;">Emergent Design ou Conception Emergente&nbsp;:</p>
+            <ul>
+              <li>La conception ne doit pas être uniquement en mode top-down.</li>
+              <li>N'importe quel membre de l'équipe peut la revoir.
+            </ul>
+          </section>
+          <section id="workingsoftware" class="lightbackground" data-background="#FFF">
+            <h2>Un truc qui marche</h2>
+            <p>Le fonctionnement réel du système est le principal indicateur d'avancement.</p>
+            <p>Tout le monde voit clairement l'avancement, y compris le client.</p>
+          </section>
+        </section>
+        <section id="collaboration">
+          <section data-background="#0B3B0B">
+            <h1>Collaboration avec le client</h1>
+            <p><small>Ce qui compte est sa satisfaction</small></p>
+          </section>
+          <section data-background="#0B3B0B">
+            <h2>De l'idée au produit</h2>
+            <p><img src="i/balancoire.jpg"></p>
+          </section>
+          <section data-background="#0B3B0B">
+            <h2>Travailler ensemble</h2>
+            <p>
+              Le client (ou son représentant) est présent dans l'équipe.<br><br>
+              Il est appelé Product Owner (PO) en Scrum.
+            </p>
+          </section>
+          <section data-background="#0B3B0B">
+            <h2>Itératif et Incrémental</h2>
+            <p style="text-align: left;">
+              <strong>itératif</strong> <small>/i.te.ʁa.tif/ masculin</small><br>
+              Qui est répété, fait plusieurs fois.
+            </p>
+            <p style="text-align: left;" class="fragment">
+              <strong>incrément</strong> <small>/ɛ̃.kʁe.mɑ̃/ masculin</small><br>
+              Ajout, valeur ajoutée à une autre, en général à plusieurs reprises.
+            </p>
+          </section>
+          <section data-background="#0B3B0B">
+            <h2>Construire une maison en méthode agile</h2>
+            <p><img src="i/popuphouse.png"></p>
+            <aside class="notes">
+              On construirait d'abord, la chambre et la salle de bain, on irait manger dehors.<br>
+              Puis on ferai la cuisine, avec réfrigérateur, plaque de cuisson, évier
+              Ensuite le séjour
+            </aside>
+          </section>
+          <section data-background="#0B3B0B">
+            <h2>NON ! Pas comme ça !</h2>
+            <p><img src="i/house.gif"></p>
+          </section>
+          <section data-background="#0B3B0B">
+            <h2>Comme ça !</h2>
+            <p><img src="i/bedroom.jpg"></p>
+          </section>
+          <section data-background="#0B3B0B">
+            <h2>La démonstration</h2>
+            <p>
+              A chaque livraison d'un incrément du logiciel,<br>
+              une démonstration est organisée avec le client,<br>
+              le sponsor, les key-users.
+            </p>
+            <p>
+              La démonstration de chaque incrément permet de<br>
+              recueillir du feedback régulièrement.
+            </p>
+          </section>
+          <section data-background="#0B3B0B">
+            <h2>Un résultat adapté</h2>
+            <p><img src="i/resultatadapte.png" alt="adaptation aux besoins"></p>
+          </section>
+        </section>
+        <section id="adaptation">
+          <section data-background="#3D3D3D">
+            <h1>Accueil bienveillant du changement</h1>
+            <p><small>Le changement c'est maintenant</small></p>
+          </section>
+          <section data-background="#3D3D3D">
+            <h2>Pilotage par la valeur</h2>
+            <p><img src="i/inversiontriangle.png" alt="Inversion du triangle"></p>
+          </section>
+          <section data-background="#3D3D3D">
+            <h2>Planning Continu</h2>
+            <p>
+              S'assurer que ce qu'on produit est toujours<br>
+              ce qui a le plus de valeur.<br>
+              Ceci impose des repriorisations régulières.
+            </p>
+          </section>
+          <section data-background="#3D3D3D">
+            <h2>Amélioration Continue</h2>
+            <p><img src="i/pdca.png"></p>
+            <aside class="notes">
+              Roue de Demming<br>
+              Amélioration sur les pratiques, les techniques<br>
+              Importance de la mesure, les KPI, pour les décisions
+            </aside>
+          </section>
+        </section>
+        <section id="manifestisback">
+          <section>
+            <h1>Retour sur le manifeste</h1>
+            <p><small>On ne s'en lasse pas</small></p>
+          </section>
+          <section>
+            <h2>Les valeurs</h2>
+            <p>
+              <strong>Les individus et leurs interactions</strong> plus que <small>les processus et les outils</small><br>
+              <strong>Des logiciels opérationnels</strong> plus qu'<small>une documentation exhaustive</small><br>
+              <strong>La collaboration avec les clients</strong> plus que <small>la négociation contractuelle</small><br>
+              <strong>L’adaptation au changement</strong> plus que <small>le suivi d'un plan</small><br>
+            </p>
+          </section>
+          <section>
+            <h2>Un autre point de vue</h2>
+            <p>Les valeurs à gauche sont vecteurs de flexibilité</p>
+            <p>Celles de droite sont vecteurs de lourdeurs</p>
+          </section>
+        </section>
+        <section id="pratiques">
+          <section>
+            <h1>Quelques Pratiques</h1>
+            <p><small>Un ensemble de pratiques au service de valeurs</small></p>
+          </section>
+          <section id="radiateur">
+            <h2>Radiateur d'Information</h2>
+            <p class="def">
+              Affichage mural pour diffuser une information pertinente : tableau des tâches,
+              nombre total de tests, ...
+            </p>
+            <p class="goal">
+              - l'équipe n'a rien à cacher (notamment à ses clients)<br>
+              - l'équipe n'a rien à <i>se</i> cacher: elle admet et confronte ses difficultés<br>
+              - provoque la discussion
+            </p>
+          </section>
+          <section id="daily">
+            <h2>Daily Scrum</h2>
+            <p class="def">
+              Réunion quotidienne d'un quart d'heure, debout.<br>
+              Qu’as tu fait depuis le dernier scrum ? Qu’est ce que tu dois faire ?
+              Qu’est ce qui t’empêche de faire ton travail ?
+            </p>
+            <p class="goal">
+              - favorise la circulation d'informations importantes<br>
+              - permet de se synchroniser<br>
+              - contribue à la cohésion de l'équipe
+            </p>
+          </section>
+          <section id="backlog">
+            <h2>Backlog</h2>
+            <p class="def">
+              Liste de <span class="fragment grow highlight-red">toutes</span> les fonctionalités ou tâches
+              nécessaires à la réalisation du projet.
+            </p>
+            <p class="goal">
+              - pour les prioriser (ordonner par ordre d'importance)<br>
+              - donne la vision d'ensemble
+            </p>
+            <aside class="note">
+              Dès qu'un nouvel item est considéré nécessaire, il doit être ajouté au backlog.
+            </aside>
+          </section>
+          <section>
+            <h2>Backlog</h2>
+            <p>Dans le backlog, on trouve, ligne après ligne&nbsp;:</p>
+            <ul>
+              <li>des anomalies à corriger</li>
+              <li>des petites fonctionalités</li>
+              <li>des tâches techniques</li>
+              <li>des modules entiers à développer</li>
+            </ul>
+            <p>
+              L'item de backlog est une simple phrase qui va être affinée (précisée, détaillée, découpée)
+              au fur et à mesure du besoin.<br>
+            </p>
+          </section>
+          <section id="userstory">
+            <h2>User Story</h2>
+            <p class="def">
+              Histoire utilisateur représentant un incrément du logiciel.<br>
+              Son expression doit pouvoir tenir sur un post'it.
+            </p>
+            <p class="goal">
+              - découpe le travail à faire<br>
+              - apporte de la valeur au client<br>
+              - unité de priorisation, de négociation
+            </p>
+            <p>
+              IMAGES d'EXEMPLE
+            </p>
+          </section>
+          <section id="planningpoker">
+            <h2>Planning Poker</h2>
+            <p class="def">
+              Estimation collective et relative des user stories.<br>
+              L'estimation est faite en points de complexité ou en taille de T-shirt.<br>
+              Tout le monde dévoile son estimation au même moment.
+            </p>
+            <p class="goal">
+              - vérifier la faisabilité d'une user story<br>
+              - concevoir une solution<br>
+              - estimer pour prioriser
+            </p>
+          </section>
+          <section id="retro">
+            <h2>Rétrospective</h2>
+            <p class="def">
+              Réunion régulière de l'équipe pour faire le bilan de la période passée et réfléchir
+              aux améliorations possibles.
+            </p>
+            <p class="goal">
+              - améliore le fonctionnement de l'équipe<br>
+              - favorise l'auto-organisation
+            </p>
+          </section>
+        </section>
+        <section id="pause">
+          <h1>Pause</h1>
+        </section>
+        <section id="challenge">
+          <section>
+            <h1>Surprise</h1>
+            <p><small>Celui qui ne peut plus éprouver ni étonnement ni surprise est pour ainsi dire mort</small></p>
+            <aside class="notes">
+              Citation d'Albert Einstein
+            </aside>
+          </section>
+          <section>
+            <h2>Challenge de la Guimauve</h2>
+            <p style="text-align: left;">
+              Instructions
+            </p>
+            <ul>
+              <li>4 à 6 personnes par table</li>
+              <li>20 spaghettis + 1 mètre de scotch + 1 mètre de fil + 1&nbsp;guimauve</li>
+              <li><a href="http://e.ggtimer.com/9minutes">9 minutes</a></li>
+              <li>Construire la plus haute structure autoportante (ni tenue ni suspendue) pour porter la guimauve</li>
+              <li>Vous pouvez utiliser tout le kit ou seulement une partie</li>
+              <li>Vous pouvez couper les spaghettis, le scotch, le fil mais pas la guimauve</li>
+              <li>On mesure la hauteur entre la base et la guimauve entière</li>
+            </ul>
+            <aside class="notes">
+              <p>
+              Etre très clair et répéter 3 fois les règles.
+              Nous mesurons la structure du dessus de la table au dessus du chamallow, l’équipe gagnante est celle qui a la structure autoportée la plus haute en mesurant cette distance.
+              Le chamallow entier doit être sur le dessus de la structure.
+              Utilisez tout ou partie du kit, comme vous le souhaitez !
+              Vous pouvez couper et assembler comme vous le souhaitez les spaghettis, la ficelle et le scotch.
+              Le challenge dure 9 minutes précises. Nous allons afficher un décompte du temps.
+              Est-ce que tout le monde a compris ?
+
+              Pendant le challenge : circuler, rappel du temps restant, chauffer la salle en disant ce qui se passe ici ou là, rappeler que la structure doit tenir toute seule !
+
+              Décompte du temps affiché en direct si possible.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <h2>Résultats</h2>
+          </section>
+          <section>
+            <h2>Seconde itération</h2>
+            <p>
+              En <a href="http://e.ggtimer.com/9minutes">9 minutes</a> comme la première.
+            </p>
+          </section>
+          <section>
+            <h2>Qu'a-t-on appris ?</h2>
+            <ul>
+              <li>Le travail en équipe ?</li>
+              <li>A respecter le timeboxing ?</li>
+              <li>La définition du fini ?</li>
+              <li>A identifier les préjugés cachés ?</li>
+              <li>A prototyper ?</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <h1>The End</h1>
+          <p style="text-align: left;">
+            - Cette présentation utilise <a href="https://github.com/hakimel/reveal.js">reveal.js</a> de Hakim El Hattab<br>
+            - <a href="https://en.wikipedia.org/wiki/Snowbird,_Utah#/media/File:Snowbird_Gondola_photo_D_Ramey_Logan.jpg">Snowbird Tram</a> photo by D Ramey Logan<br>
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        slideNumber: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          // { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          // { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
