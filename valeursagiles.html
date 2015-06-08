@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Initiation aux méthodes agiles</title>
+    <title>Découverte des Valeurs Agiles</title>
 
     <meta name="description" content="A simple presentation of the values behind agile methods.">
     <meta name="author" content="Maxime">
@@ -20,24 +20,42 @@
       section.lightbackground, section.lightbackground h1, section.lightbackground h2 {
         color: #555;
       }
-      ul.small {
+      /* Shadow for h1 */
+      div.reveal h1 {
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);
+      }
+      div.reveal ul ul {
         font-size: smaller;
       }
-      /* No image border */
-      div.slides section img {
+      /* No image background and no border */
+      div.reveal section img {
+        background-color: transparent;
         border: 0;
+        box-shadow: none;
+        margin: 0;
       }
+      /* Photo shadow */
+      div.reveal section img.photo {
+        box-shadow: 0 0 40px #000;
+      }
+
       /* small align */
       div.slides section small {
         vertical-align: middle;
       }
-      /* No image background */
+
+      .lightcontrast {
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+      /* No image background
       section#adaptation section img {
         background-color: transparent;
         box-shadow: none;
-      }
+      } */
       section#pratiques .def {
-        background-color: blue;
+        background-color: #088;
+        border-radius: 10px;
+        padding: 10px 20px;
         text-align: left;
       }
       section#pratiques .goal {
@@ -68,13 +86,13 @@
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
         <section id="title">
-          <section>
+          <section data-background="i/planebackground.jpg">
             <h1>Découverte des valeurs agiles</h1>
             <p>
               <small>Créé avec &hearts;&hearts;&hearts; en mai 2015</small>
             </p>
           </section>
-          <section>
+          <section data-background="i/planebackground.jpg">
             <h2>Plan</h2>
             <ol>
               <li>En 2 mots</li>
@@ -89,11 +107,11 @@
         </section>
         <!-- En 2 mots -->
         <section id="inshort">
-          <section>
+          <section data-background="#E6E6FA">
              <h1>En 2 mots</h1>
              <p><small>Pour ceux qui devront partir avant la fin</small></p>
            </section>
-          <section data-autoslide="10000">
+          <section data-background="#E6E6FA">
             <h2>Définition en une phrase</h2>
             <blockquote style="text-align:left" cite="http://creativeheldstab.com/agile-in-one-sentence-by-andy-hunt/">
               <p style="text-align:left">&ldquo;Agile development uses feedback to make constant adjustments in a highly
@@ -102,9 +120,9 @@
             </blockquote>
             <p style="text-align:left" class="fragment"><small>Le développement agile utilise les retours (rétroactions) pour s'adapter en permanence dans un environnement hautement collaboratif.</small></p>
           </section>
-          <section>
+          <section data-background="#E6E6FA">
             <h2>En 2 minutes</h2>
-            <p>C'est ce qui a été demandé à <a href="http://www.agiliste.fr/2-minutes-pour-presenter-l-approche-agile/" >Florent Lothon&nbsp;<img src="i/flothon.png"></a>
+            <p>C'est ce qui a été demandé à <a href="http://www.agiliste.fr/2-minutes-pour-presenter-l-approche-agile/" >Florent Lothon</a>&nbsp;<img src="i/flothon.png">
             <br>devant 1500 personnes au théatre Mogador.</p>
             <p>&nbsp;</p>
             <p style="text-align:left">Question de l’animateur :</p>
@@ -174,13 +192,13 @@
             <ul>
               <li>La micro-informatique est dans les entreprises</li>
               <li>Les outils d'industrialisation du développement se sont développés
-              <ul class="small">
+              <ul>
                 <li>Les langages COBOL, C, Smalltalk, C++, ADA et bientôt Java</li>
                 <li>Les Ateliers de Génie Logiciel, les éditeurs, débogueurs, le makefile</li>
                 <li>Les outils de gestion de versions, des exigences, des tests</li>
               </ul></li>
               <li>Les méthodes aussi
-                <ul class="small">
+                <ul>
                   <li>La programmation structurée, SADT,</li>
                   <li>Cap Gemini SDM, SSADM,</li>
                   <li>MERISE en France</li>
@@ -235,7 +253,7 @@
           </section>
           <section data-background="i/waterfall.png">
             <h2>Au bout du pont</h2>
-            <ul class="fragment">
+            <ul class="fragment lightcontrast">
               <li>Un découpage en multiple phases.</li>
               <li>Des phases découpées en étapes.</li>
               <li>Des documents en abondance et jamais à jour.</li>
@@ -276,13 +294,13 @@
               <li>Unified Process [1994]</li>
               <li>Dynamic systems development method ou DSDM [1994]</li>
               <li>Scrum [1995]</li>
-                <ul class="small"><li>par Ken Schwaber</li></ul>
+                <ul><li>par Ken Schwaber</li></ul>
               <li>eXtreme Programming [1996]</li>
-                <ul class="small"><li>par Kent Beck, Ward Cunningham et Ron Jeffries</li></ul>
+                <ul><li>par Kent Beck, Ward Cunningham et Ron Jeffries</li></ul>
               <li>Crystal Clear [1996]</li>
-                <ul class="small"><li>par Alistair Cockburn</li></ul>
+                <ul><li>par Alistair Cockburn</li></ul>
               <li>Feature-Driven Development ou FDD [1997]</li>
-                <ul class="small"><li>par Jeff De Luca</li></ul>
+                <ul><li>par Jeff De Luca</li></ul>
             </ul>
             <aside class="notes">
               <ul>
@@ -359,7 +377,7 @@
           </section>
           <section data-background="#61380B">
             <h2>Limitons le WIP</h2>
-            <p><img src="i/highwip.gif"></p>
+            <p><img class="photo" src="i/highwip.gif"></p>
             <aside class="notes">
               On est plus productif lorsqu'on travaille sur une seule tâche à la fois.
               Et on mets 1/4 d'heure à reprendre un travail interrompu.
@@ -368,7 +386,7 @@
           <section data-background="#61380B">
             <h2>La motivation est essentielle</h2>
             <p>Qu'est-ce qui motive un travailleur du savoir ?</p>
-            <p class="fragment"><img src="i/todolist.png"></p>
+            <p class="fragment"><img class="photo" src="i/todolist.png"></p>
             <aside class="notes">
               La motivation est liée à l'atteinte des objectifs
             </aside>
@@ -421,33 +439,33 @@
           </section>
         </section>
         <section id="software">
-          <section class="lightbackground" data-background="#FFF">
+          <section data-background="#D2B48C">
             <h1>Focus sur le logiciel</h1>
             <p><small>Parce que c'est le produit</small></p>
           </section>
-          <section class="lightbackground" data-background="#FFF">
-            <h2>Les 4 dimensions du projet idéal</h2>
+          <section data-background="#D2B48C">
+            <h2>Les 4 dimensions<br>du projet idéal</h2>
             <p><img src="i/4dim1.png"></p>
           </section>
-          <section class="lightbackground" data-background="#FFF">
-            <h2>Les 4 dimensions du projet réel</h2>
+          <section data-background="#D2B48C">
+            <h2>Les 4 dimensions<br>du projet réel</h2>
             <p><img src="i/4dim2.png"></p>
           </section>
-          <section class="lightbackground" data-background="#FFF">
+          <section data-background="#D2B48C">
             <h2>La qualité n'est pas négociable</h2>
             <p><img src="i/4dim3.png"></p>
           </section>
-          <section class="lightbackground" data-background="#FFF">
+          <section data-background="#D2B48C">
             <h2>Excellence technique</h2>
-            <p>Tests automatiques</p>
-            <p>Intégration continue</p>
-            <p>Code propre</p>
-            <p>Correction des bugs au plus tôt</p>
+            <p style="text-align: left; padding-left: 15%; transform: rotate(4deg);"><br>Tests automatiques</p>
+            <p style="transform: rotate(-7deg);">Intégration continue</p>
+            <p style="text-align: right; padding-right: 20%; transform: rotate(-5deg);">Code propre</p>
+            <p style="transform: rotate(3deg);">Correction des bugs au plus tôt</p>
             <aside class="notes">
               Principe du "No broken window"
             </aside>
           </section>
-          <section id="kiss" class="lightbackground" data-background="#FFF">
+          <section id="kiss" data-background="#D2B48C">
             <h2>Simplicité</h2>
             <p>
               KISS : Keep It Simple, Stupid<br>
@@ -459,7 +477,7 @@
               <li>N'importe quel membre de l'équipe peut la revoir.
             </ul>
           </section>
-          <section id="workingsoftware" class="lightbackground" data-background="#FFF">
+          <section id="workingsoftware" data-background="#D2B48C">
             <h2>Un truc qui marche</h2>
             <p>Le fonctionnement réel du système est le principal indicateur d'avancement.</p>
             <p>Tout le monde voit clairement l'avancement, y compris le client.</p>
@@ -480,6 +498,9 @@
               Le client (ou son représentant) est présent dans l'équipe.<br><br>
               Il est appelé Product Owner (PO) en Scrum.
             </p>
+            <aside class="notes">
+              Le PO est unique, c'est lui qui décide en dernier ressort.
+            </aside>
           </section>
           <section data-background="#0B3B0B">
             <h2>Itératif et Incrémental</h2>
@@ -503,11 +524,11 @@
           </section>
           <section data-background="#0B3B0B">
             <h2>NON ! Pas comme ça !</h2>
-            <p><img src="i/house.gif"></p>
+            <p><img class="photo" src="i/house.gif"></p>
           </section>
           <section data-background="#0B3B0B">
             <h2>Comme ça !</h2>
-            <p><img src="i/bedroom.jpg"></p>
+            <p><img class="photo" src="i/bedroom.jpg"></p>
           </section>
           <section data-background="#0B3B0B">
             <h2>La démonstration</h2>
@@ -642,9 +663,9 @@
               - apporte de la valeur au client<br>
               - unité de priorisation, de négociation
             </p>
-            <p>
-              IMAGES d'EXEMPLE
-            </p>
+          </section>
+          <section data-background="i/3userstories.jpg" data-background-transition="zoom">
+            <h2>User Story</h2>
           </section>
           <section id="planningpoker">
             <h2>Planning Poker</h2>
