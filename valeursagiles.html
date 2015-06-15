@@ -28,8 +28,20 @@
         font-family: 'Mouse Memoirs', sans-serif;
         text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);
       }
+      div.reveal h2 {
+        font-family: 'Mouse Memoirs', sans-serif;
+      }
       div.reveal ul ul {
         font-size: smaller;
+      }
+      div.reveal strong {
+        font-size: 110%;
+      }
+      div.reveal small {
+        font-size: 80%;
+      }
+      div.reveal p.manifest {
+        font-size: 80%;
       }
       /* No image background and no border */
       div.reveal section img {
@@ -62,8 +74,11 @@
         padding: 10px 20px;
         text-align: left;
       }
-      section#pratiques .goal {
-        background-color: green;
+      section#pratiques ul.goal {
+        background-color: #9AB45A;
+        border-radius: 10px;
+        margin: 0;
+        padding: 10px 20px 10px 50px;
         text-align: left;
       }
     </style>
@@ -437,7 +452,7 @@
               Bienveillance. Confiance. Courage.<br>
               Liberté de parole. Sincérité. Honnêteté.
             </p>
-            <p class="fragment current-visible">
+            <p style="text-align: left;" class="fragment">
               Quand la communication est-elle la plus efficace ?<br>
               Quand les gens désirent travailler ensemble et font ce qu'il faut pour réaliser l'objectif.</p>
           </section>
@@ -491,6 +506,15 @@
           <section data-background="#0B3B0B">
             <h1>Collaboration avec le client</h1>
             <p><small>Ce qui compte est sa satisfaction</small></p>
+          </section>
+          <section data-background="#0B3B0B">
+            <h2>La négociation du contrat</h2>
+            <p><img class="photo" src="i/tugofwar.jpg"></p>
+            <aside class="notes">
+              Les intérêts du client et du fournisseur sont opposés.<br>
+              Le client veut plus plus plus de fonctionalités pour le même prix (sans parler valeur).<br>
+              Le fournisseur en veut moins moins moins pour augmenter sa marge.
+            </aside>
           </section>
           <section data-background="#0B3B0B">
             <h2>De l'idée au produit</h2>
@@ -585,7 +609,7 @@
           </section>
           <section>
             <h2>Les valeurs</h2>
-            <p>
+            <p class="manifest">
               <strong>Les individus et leurs interactions</strong> plus que <small>les processus et les outils</small><br>
               <strong>Des logiciels opérationnels</strong> plus qu'<small>une documentation exhaustive</small><br>
               <strong>La collaboration avec les clients</strong> plus que <small>la négociation contractuelle</small><br>
@@ -595,7 +619,7 @@
           <section>
             <h2>Un autre point de vue</h2>
             <p>Les valeurs à gauche sont vecteurs de flexibilité</p>
-            <p>Celles de droite sont vecteurs de lourdeurs</p>
+            <p>Celles de droite sont sources de rigidité</p>
           </section>
         </section>
         <section id="pratiques">
@@ -609,11 +633,11 @@
               Affichage mural pour diffuser une information pertinente : tableau des tâches,
               nombre total de tests, ...
             </p>
-            <p class="goal">
-              - l'équipe n'a rien à cacher (notamment à ses clients)<br>
-              - l'équipe n'a rien à <i>se</i> cacher: elle admet et confronte ses difficultés<br>
-              - provoque la discussion
-            </p>
+            <ul class="goal">
+              <li>l'équipe n'a rien à cacher (notamment à ses clients)</li>
+              <li>l'équipe n'a rien à <i>se</i> cacher: elle admet et confronte ses difficultés</li>
+              <li>provoque la discussion</li>
+            </ul>
           </section>
           <section id="daily">
             <h2>Daily Scrum</h2>
@@ -622,11 +646,11 @@
               Qu’as tu fait depuis le dernier scrum ? Qu’est ce que tu dois faire ?
               Qu’est ce qui t’empêche de faire ton travail ?
             </p>
-            <p class="goal">
-              - favorise la circulation d'informations importantes<br>
-              - permet de se synchroniser<br>
-              - contribue à la cohésion de l'équipe
-            </p>
+            <ul class="goal">
+              <li>favorise la circulation d'informations importantes</li>
+              <li>permet de se synchroniser</li>
+              <li>contribue à la cohésion de l'équipe</li>
+            </ul>
           </section>
           <section id="backlog">
             <h2>Backlog</h2>
@@ -635,7 +659,7 @@
               nécessaires à la réalisation du projet.
             </p>
             <ul class="goal">
-              <li>pour les prioriser (ordonner par ordre d'importance)</li>
+              <li>pour les prioriser (ordonnées par ordre d'importance)</li>
               <li>donne la vision d'ensemble</li>
             </ul>
             <aside class="notes">
@@ -662,11 +686,11 @@
               Histoire utilisateur représentant un incrément du logiciel.<br>
               Son expression doit pouvoir tenir sur un post'it.
             </p>
-            <p class="goal">
-              - découpe le travail à faire<br>
-              - apporte de la valeur au client<br>
-              - unité de priorisation, de négociation
-            </p>
+            <ul class="goal">
+              <li>découpe le travail à faire</li>
+              <li>apporte de la valeur au client</li>
+              <li>unité de priorisation, de négociation</li>
+            </ul>
           </section>
           <section data-background="i/3userstories.jpg" data-background-transition="zoom">
             <h2>User Story</h2>
@@ -678,11 +702,25 @@
               L'estimation est faite en points de complexité ou en taille de T-shirt.<br>
               Tout le monde dévoile son estimation au même moment.
             </p>
-            <p class="goal">
-              - vérifier la faisabilité d'une user story<br>
-              - concevoir une solution<br>
-              - estimer pour prioriser
+            <ul class="goal">
+              <li>vérifier la faisabilité d'une user story</li>
+              <li>concevoir une solution</li>
+              <li>estimer pour prioriser</li>
+            </ul>
+          </section>
+          <section id="defofdone">
+            <h2>Definition of Done</h2>
+            <p class="def">
+              Définition formelle des critères permettant de dire qu'une story est terminée.
             </p>
+            <ul class="goal">
+              <li>éviter la question : "c'est fini-fini&nbsp;?"</li>
+              <li>checklist permettant de ne pas oublier des activités</li>
+              <li>définition claire de ce qui va être comptabilisé</li>
+            </ul>
+            <aside class="notes">
+              Exemple de liste de critères: codé, testé unitairement, code revu, documentation mise à jour, cas de test passé.
+            </aside>
           </section>
           <section id="retro">
             <h2>Rétrospective</h2>
@@ -690,10 +728,10 @@
               Réunion régulière de l'équipe pour faire le bilan de la période passée et réfléchir
               aux améliorations possibles.
             </p>
-            <p class="goal">
-              - améliore le fonctionnement de l'équipe<br>
-              - favorise l'auto-organisation
-            </p>
+            <ul class="goal">
+              <li>améliore le fonctionnement de l'équipe</li>
+              <li>favorise l'auto-organisation</li>
+            </ul>
           </section>
         </section>
         <section id="pause">
