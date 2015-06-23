@@ -137,12 +137,13 @@
               collaborative environment.&rdquo;</p>
               <div style="text-align:right">&mdash; Andy Hunt</div>
             </blockquote>
-            <p style="text-align:left" class="fragment"><small>Le développement agile utilise les retours (rétroactions) pour s'adapter en permanence dans un environnement hautement collaboratif.</small></p>
+            <p style="text-align:left"><small>Le développement agile utilise les retours (rétroactions) pour s'adapter
+              en permanence dans un environnement hautement collaboratif.</small></p>
           </section>
           <section data-background="#E6E6FA">
             <h2>En 2 minutes</h2>
-            <p>C'est ce qui a été demandé à <a href="http://www.agiliste.fr/2-minutes-pour-presenter-l-approche-agile/" >Florent Lothon</a>&nbsp;<img src="i/flothon.png">
-            <br>devant 1500 personnes au théatre Mogador.</p>
+            <p>C'est ce qui a été demandé à <a href="http://www.agiliste.fr/2-minutes-pour-presenter-l-approche-agile/">
+              Florent Lothon</a>&nbsp;<img src="i/flothon.png"><br>devant 1500 personnes au théatre Mogador.</p>
             <p>&nbsp;</p>
             <p style="text-align:left">Question de l’animateur :</p>
             <blockquote>Florent, qu’est ce que la ‘méthode agile’ ?</blockquote>
@@ -407,7 +408,10 @@
             <p>Qu'est-ce qui motive un travailleur du savoir ?</p>
             <p class="fragment"><img class="photo" src="i/todolist.png"></p>
             <aside class="notes">
-              La motivation est liée à l'atteinte des objectifs
+              Le terme "travailleur du savoir" a été inventé ar Peter Drucker.<br>
+              La motivation est liée à l'atteinte des objectifs réalistes et ambitieux.<br>
+              C'est une des 3 sources de motivation définie par David McClelland (avec le pouvoir et l'esprit d'équipe).<br>
+              http://www.businessballs.com/davidmcclelland.htm
             </aside>
           </section>
           <section data-background="#61380B">
@@ -490,11 +494,15 @@
               KISS : Keep It Simple, Stupid<br>
               ou l'art de minimiser le travail à faire.
             </p>
-            <p style="text-align: left;">Emergent Design ou Conception Emergente&nbsp;:</p>
+            <p class="fragment" style="text-align: left;">Emergent Design ou Conception Emergente&nbsp;:</p>
             <ul>
               <li>La conception ne doit pas être uniquement en mode top-down.</li>
-              <li>N'importe quel membre de l'équipe peut la revoir.
+              <li>N'importe quel membre de l'équipe peut la revoir.</li>
             </ul>
+            <aside class="notes">
+              La façon la plus simple d'arriver au résultat est la meilleure. Anticiper les extensions futures est une
+              perte de temps. Une application simple sera plus facile à faire évoluer.
+            </aside>
           </section>
           <section data-background="#D2B48C">
             <h2>KISS</h2>
@@ -525,14 +533,6 @@
             </aside>
           </section>
           <section data-background="#0B3B0B">
-            <h2>De l'idée au produit</h2>
-            <p><img src="i/balancoire.jpg"></p>
-            <aside class="notes">
-              Le client est soumis à la loi d'Humphrey ou dilemme du mille-pattes.
-              Il ne sait pas expliquer ce qu'il fait d'instinct.
-            </aside>
-          </section>
-          <section data-background="#0B3B0B">
             <h2>Travailler ensemble</h2>
             <p>
               Le client (ou son représentant) est présent dans l'équipe.<br><br>
@@ -540,6 +540,14 @@
             </p>
             <aside class="notes">
               Le PO est unique, c'est lui qui décide en dernier ressort.
+            </aside>
+          </section>
+          <section data-background="#0B3B0B">
+            <h2>De l'idée au produit</h2>
+            <p><img class="photo" src="i/balancoire.jpg"></p>
+            <aside class="notes">
+              Le client est soumis à la loi d'Humphrey ou dilemme du mille-pattes.
+              Il ne sait pas expliquer ce qu'il fait d'instinct.
             </aside>
           </section>
           <section data-background="#0B3B0B">
@@ -606,6 +614,10 @@
               ce qui a le plus de valeur.<br>
               Ceci impose des repriorisations régulières.
             </p>
+            <aside class="notes">
+              64% des fonctionnalités développées ne sont PAS utilisées ou rarement...<br>
+              Chaos Report 2001
+            </aside>
           </section>
           <section data-background="#3D3D3D">
             <h2>Amélioration Continue</h2>
@@ -700,6 +712,12 @@
               <li>provoque la discussion</li>
             </ul>
           </section>
+          <section data-background="i/boardscrumban.jpg">
+            <h2>Radiateur d'Information</h2>
+          </section>
+          <section data-background="i/boardagilepirate.jpg">
+            <h2>Radiateur d'Information</h2>
+          </section>
           <section id="daily">
             <h2>Daily Scrum</h2>
             <p class="def">
@@ -712,6 +730,9 @@
               <li>permet de se synchroniser</li>
               <li>contribue à la cohésion de l'équipe</li>
             </ul>
+            <aside class="notes">
+              Aussi nommé Standup Meeting, Daily Meeting
+            </aside>
           </section>
           <section id="backlog">
             <h2>Backlog</h2>
@@ -794,6 +815,23 @@
               <li>favorise l'auto-organisation</li>
             </ul>
           </section>
+          <section id="pairworking">
+            <h2>Programmation en Binôme</h2>
+            <p class="def">
+               2 développeurs travaillent ensemble sur un même poste de travail.<br>Celui qui rédige le code est
+               appelé conducteur, l'autre, appelé observateur, l'assiste. Ils échangent leur rôle régulièrement.
+            </p>
+            <ul class="goal">
+              <li>améliore la qualité du code produit</li>
+              <li>partage la connaissance</li>
+              <li>meilleure capacité à rester concentré</li>
+            </ul>
+            <aside class="notes">
+              Pair Programming en anglais est une pratique XP.<br>
+              Le conducteur décrit à haute voix ce qu'il fait. <br>
+              On peut aussi faire du pair-testing.
+            </aside>
+          </section>
         </section>
         <section id="pause">
           <h1>Pause</h1>
@@ -807,7 +845,7 @@
             </aside>
           </section>
           <section>
-            <h2>Challenge de la Guimauve</h2>
+            <h2>Marshmallow Challenge</h2>
             <p style="text-align: left;">
               Instructions
             </p>
@@ -847,7 +885,7 @@
           </section>
           <section>
             <h2>Qu'a-t-on appris ?</h2>
-            <ul>
+            <ul class="fragment">
               <li>Le travail en équipe ?</li>
               <li>A respecter le timeboxing ?</li>
               <li>La définition du fini ?</li>
@@ -856,13 +894,14 @@
             </ul>
           </section>
         </section>
-        <section>
+        <section id="end">
           <h1>The End</h1>
           <p style="text-align: left;">
             - Cette présentation utilise <a href="https://github.com/hakimel/reveal.js">reveal.js</a> de Hakim El Hattab<br>
             - <a href="https://en.wikipedia.org/wiki/Snowbird,_Utah#/media/File:Snowbird_Gondola_photo_D_Ramey_Logan.jpg">Snowbird Tram</a> photo de D. Ramey Logan<br>
             - <a href="http://agilemanifesto.org/">Fond du manifeste agile</a> photo de Ward Cunningham<br>
-            - <a href="http://www.bouzin-agile.fr/?post/2013/03/12/KISS-Keep-it-Simple-Stupid">Illustrations du KISS</a> empruntées au site bouzin-agile.
+            - <a href="http://www.bouzin-agile.fr/?post/2013/03/12/KISS-Keep-it-Simple-Stupid">Illustrations du KISS</a> empruntées au site bouzin-agile<br>
+            - Photo de tableau agile empruntée au site <a href="http://theagilepirate.net/">The Agile Pirate</a>
           </p>
         </section>
       </div>
