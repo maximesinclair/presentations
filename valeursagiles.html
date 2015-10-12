@@ -81,6 +81,17 @@
         padding: 10px 20px 10px 50px;
         text-align: left;
       }
+
+      section#roti ul {
+        list-style: none;
+        margin: 0; padding: 0;
+      }
+      section#roti ul li {
+        background: url("i/rotione.png") no-repeat 0 0;
+        line-height: 100px;
+        margin: 0;
+        padding: 0 0 0.6em 130px;
+      }
     </style>
     <!-- Code syntax highlighting
     <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -180,21 +191,25 @@
             <h2>Au début, tout est facile</h2>
             <p>Jusqu'à la fin des années 1960, le logiciel:</p>
             <ul>
-              <li>est essentiellement codé en assembleur</li>
               <li>consiste en des traitements batchs</li>
               <li>automatise des processus répétitifs</li>
+              <li>est essentiellement codé en assembleur</li>
               <li>économise les bits et les cycles CPU</li>
             </ul>
             <p><img src="i/carteperfo.png"></p>
+            <aside class="notes">
+              Le logiciel est livré gratuitement, seul le hardware est payant.<br>
+              Passer vite sur ce slide.
+            </aside>
           </section>
           <section id="firstcrisis">
             <h2>La première crise du logiciel</h2>
             <p>Fin des années 60, début des 70</p>
             <ul>
-              <li>En 10 ans, la puissance des ordinateurs est multiplié par 100, et la productivité du développement par 4</li>
+              <li>En 10 ans, la puissance des ordinateurs est multipliée par 100, et la productivité du développement par 4</li>
               <li>Premier colloque de Génie Logiciel</li>
+              <li>On cherche à industrialiser le développement logiciel</li>
               <li>Invention du développement en cascade</li>
-              <li>On cherche à industrialiser le processus de développement</li>
             </ul>
             <aside class="notes">
               <ul>
@@ -218,23 +233,22 @@
                 <li>Les Ateliers de Génie Logiciel, les éditeurs, débogueurs, le makefile</li>
                 <li>Les outils de gestion de versions, des exigences, des tests</li>
               </ul></li>
-              <li>Les méthodes aussi
+              <li>Et les méthodes aussi
                 <ul>
-                  <li>La programmation structurée, SADT,</li>
-                  <li>Cap Gemini SDM, SSADM,</li>
+                  <li>SADT, Cap Gemini SDM, SSADM</li>
                   <li>MERISE en France</li>
                 </ul>
               </li>
             </ul>
             <aside class="notes">
+              Dans le fond, les outils et les process ont bien progressé mais le dev logiciel est toujours difficile.
               <ul>
                 <li>L'interface graphique Macintosh 1984, Windows, OS/2 (fenêtres,souris) s'impose</li>
                 <li>Le réseau de télécommunication pointe son nez</li>
                 <li>Smalltalk, C++ languages objets</li>
                 <li>ADA appel d'offre du DoD en 1977, conçu comme un langage universel, fiable et sûr</li>
                 <li>Qui dit AGL, dit L4G (CASE en english), AD/Cycle d'IBM</li>
-                <li>Gestion des versions SCCS, RCS, PVCS, CVS</li>
-                <li>SDM pour System Development Methodology</li>
+                <li>SADT pour Structured Analysis and Design Technique, SDM pour System Development Methodology</li>
                 <li>SSADM pour Structured systems analysis and design method créé au UK</li>
               </ul>
             </aside>
@@ -257,6 +271,11 @@
             <h2>La métaphore du pont</h2>
             <p><img src="i/bridgechaosreport.png"></p>
             <p><small>Cette photo illustre la première page du premier Chaos Report.</small></p>
+            <aside class="notes">
+              Préambule du rapport: c'est en mesurant nos actions qu'on progresse
+              A cette époque, l'idée dominante consiste à appliquer au dev logiciel ce qui a marché pour la
+              construction
+            </aside>
           </section>
           <section>
             <h2>La métaphore du pont</h2>
@@ -270,6 +289,7 @@
               <li>Donc, une conception très détaillée permet de garantir une fabrication optimale.</li>
             </ul>
             <aside class="notes">
+              C'est ce qu'on trouve dans les méthodes et dans les AGL (générateurs de code)
             </aside>
           </section>
           <section data-background="i/waterfall.png">
@@ -277,14 +297,13 @@
             <ul class="fragment lightcontrast">
               <li>Un découpage en multiple phases.</li>
               <li>Des phases découpées en étapes.</li>
-              <li>Des documents en abondance et jamais à jour.</li>
+              <li>Des documents en abondance et toujours à valider.</li>
               <li>Des équipes de spécialistes sans vue d'ensemble.</li>
               <li>De la sous-traitance, de l'off-shore.</li>
               <li>Un effet tunnel.</li>
               <li>Beaucoup d'énergie passée à estimer, planifier, découper, affecter&nbsp;&hellip;</li>
             </ul>
             <aside class="notes">
-
             </aside>
           </section>
           <section>
@@ -959,13 +978,34 @@
             </aside>
           </section>
         </section>
-        <section>
-          <h1>
-            Une dernière pratique
-          </h1>
-          <p>
-            Le ROTI
-          </p>
+        <section id="roti">
+          <section data-background="#46656A">
+            <h1>
+              Une dernière pratique
+            </h1>
+            <p>
+              Le ROTI
+            </p>
+          </section>
+          <section data-background="#46656A">
+            <h2>
+              Return On Time Invested
+            </h2>
+            <p>POULET en français, selon la définition de Pablo Pernot:</p>
+            <p>Performance Octroyée selon l'Utilité et la Légitimité du sujet En relation avec le Temps passé</p>
+          </section>
+          <section data-background="#46656A">
+            <h2>
+              Return On Time Invested
+            </h2>
+            <ul>
+              <li style="background-image: url('i/rotione.png');">Totalement inutile, j'ai perdu mon temps</li>
+              <li style="background-image: url('i/rotitwo.png');">Négatif, trop de temps par rapport à la valeur reçue</li>
+              <li style="background-image: url('i/rotithree.png');">Moyen, équilibre entre gain et temps passé</li>
+              <li style="background-image: url('i/rotifour.png');">Positif, gain supérieur au temps passé</li>
+              <li style="background-image: url('i/rotifive.png');">Réellement utile, vaut largement le temps passé</li>
+            </ul>
+          </section>
         </section>
         <section id="end">
           <h1>The End</h1>
