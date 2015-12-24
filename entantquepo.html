@@ -82,6 +82,30 @@
         text-align: left;
       }
 
+      section#bdd ul {
+        list-style: none;
+      }
+      section#bdd span.keyword {
+        color: #42AFFA;
+      }
+      section#bdd li.et {
+        margin-left: 1em;
+      }
+      section#bdd pre.data {
+        margin-left: 2em;
+      }
+
+      section#roti ul {
+        list-style: none;
+        margin: 0; padding: 0;
+      }
+      section#roti ul li {
+        background: url("i/rotione.png") no-repeat 0 0;
+        line-height: 100px;
+        margin: 0;
+        padding: 0 0 0.6em 130px;
+      }
+
     </style>
     <!-- Code syntax highlighting
     <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -130,8 +154,8 @@
       <section id="role">
         <section data-background="#E6E6FA">
           <h1>Product Owner</h1>
-          <p>Le terme PO a pour origine la méthode Scrum.</p>
-          <p>Il est l'un des 3 rôles de l'équipe,<br>avec le <b>Développeur</b> et le <b>Scrum Master</b>.</p>
+          <p>Le terme PO a pour origine la méthode Scrum</p>
+          <p>Il est l'un des 3 rôles de l'équipe,<br>avec le <b>Développeur</b> et le <b>Scrum Master</b></p>
         </section>
         <section data-background="#E6E6FA">
           <h2>Définition en 2 phrases</h2>
@@ -150,6 +174,7 @@
           <h2>Dans l'organisation</h2>
           <p>Le Product Owner est une personne,<br>pas un comité.</p>
           <p>Il est LE responsable du produit.</p>
+          <p class="fragment">Il n'est pas <b>Project</b> Owner !</p>
           <aside class="notes">
             Il n'est pas seul à réaliser, il peut délèguer, mais il est le seul à porter la responsabilité.
           </aside>
@@ -261,11 +286,15 @@
             <li>de comprendre pourquoi réduire la dette technique a une valeur métier.</li>
           </ul>
         </section>
-        <section data-background="#E6E6FA">
+        <section id="tetris" data-background="#E6E6FA">
           <h2>La dette technique</h2>
           <p><img src="i/tetris.png" alt="Tetris" /></p>
+          <aside class="notes">
+            Cette analogie n'est pas totalement satisfaisante car plus on avance plus les cubes sont vites posés or
+            dans le logiciel, plus la dette est importante, plus on est lent à délivrer.
+          </aside>
         </section>
-        <section data-background="#E6E6FA">
+        <section id="dettetechnique" data-background="#E6E6FA">
           <h2>La dette technique</h2>
           <ul>
             <li>Code de mauvaise qualité, absence de refactoring</li>
@@ -314,7 +343,7 @@
       <section id="vision">
         <section data-background="#5488C3">
           <h1>Vision</h1>
-          <p>We know why our work is important and<br>how we'll be successful.</p>
+          <p>We know why our work is important and<br>how we'll be successful</p>
           <aside class="notes">
             <p>
             </p>
@@ -380,11 +409,11 @@
             </p>
           </aside>
         </section>
-        <section data-background="#5488C3">
+        <section id="personaexample" data-background="#5488C3">
           <h2>Exemple de Persona</h2>
           <p><img src="i/exemplepersona.png" alt="Template" /></p>
         </section>
-        <section data-background="#5488C3">
+        <section id="impactmapping" data-background="#5488C3">
           <h2>Impact Mapping</h2>
           <ul>
             <li>Une visualisation du périmêtre et des hypothèses sous-jacentes, créée de manière collaborative.</li>
@@ -447,6 +476,10 @@
           <h2>HOW ?</h2>
           <ul>
             <li>Comment le comportent des acteurs doit-il changer&nbsp;?</li>
+            <ul>
+              <li>Que vont-ils commencer à faire ?</li>
+              <li>Que vont-ils arrêter de faire ?</li>
+            </ul>
             <li>Comment peuvent-ils nous aider à atteindre notre objectif&nbsp;?</li>
             <li>Comment peuvent-ils nous empêcher de réussir&nbsp;?</li>
           </ul>
@@ -471,26 +504,36 @@
           <p style="text-align: left;">Exemples&nbsp;:<p>
           <ul style="font-style: italic;">
             <li>Homepage adaptée au mobile avec le formulaire d'achat</li>
-            <li>Le client peut imprimer lui-même ses tickets</li>
+            <li>Permettre au client d'imprimer lui-même ses tickets</li>
           </ul>
         </section>
-        <section data-background="#5488C3">
+        <section id="impactmapexample" data-background="#5488C3">
           <h2>Exemple de Map d'Impacts</h2>
           <p><img src="i/mylibraryimpactmap.png" alt="Impact Map" /></p>
         </section>
         <section data-background="#5488C3">
           <h2>Why Who How What</h2>
           <p style="text-align: left;">
-            Une carte d'impacts met tous les livrables dans le contexte des impacts qu'ils sont censés créer. Cela
-            permet de comparer les livrables et d'éviter de sur-investir dans des parties moins importantes de la carte.
+            #1 Mettre en corrélation le quoi avec le pourquoi
           </p>
           <p style="text-align: left;">
-            En connectant les <b>livrables</b> aux <b>impacts</b> et aux <b>objectifs</b>, une carte d'impacts montre
-            la chaîne de raisonnement qui a mené à une idée de fonctionnalité. Cela permet de mieux ré-évaluer
-            ces décisions lorsque de nouvelles informations sont accessibles suite aux livraisons précédentes.
+            #2 Créer des options
+          </p>
+          <p style="text-align: left;">
+            #3 Mener des expériences
+          </p>
+          <p>
+            Minimiser l'effort,<br>maximiser les résultats
           </p>
           <aside class="notes">
             <p>
+              Une carte d'impacts met tous les livrables dans le contexte des impacts qu'ils sont censés créer. Cela
+              permet de comparer les livrables et d'éviter de sur-investir dans des parties moins importantes de la carte.
+            </p>
+            <p>
+              En connectant les <b>livrables</b> aux <b>impacts</b> et aux <b>objectifs</b>, une carte d'impacts montre
+              la chaîne de raisonnement qui a mené à une idée de fonctionnalité. Cela permet de mieux ré-évaluer
+              ces décisions lorsque de nouvelles informations sont accessibles suite aux livraisons précédentes.
             </p>
           </aside>
         </section>
@@ -524,7 +567,7 @@
       <section id="productbacklog">
         <section data-background="#61380B">
           <h1>Product Backlog</h1>
-          <p>Construire une roadmap agile.</p>
+          <p>Construire une roadmap agile</p>
         </section>
         <section data-background="#61380B">
           <h2>Affinage</h2>
@@ -648,7 +691,7 @@
         <section id="independent" data-background="#D2B48C">
           <h2>Indépendante</h2>
           <p>
-            Ne dépend pas de la réalisation d'une autre US.<br>
+            Ne dépend pas de la réalisation d'une autre story.<br>
             Peut être réalisée à n'importe quel moment.
           </p>
           <p>
@@ -748,6 +791,260 @@
           </p>
         </section>
       </section>
+      <section id="sprintbacklog">
+        <section data-background="#0B3B0B">
+          <h1>Sprint Backlog</h1>
+          <p>Le contenu de l'itération</p>
+        </section>
+        <section data-background="#0B3B0B">
+          <h2>L'objectif</h2>
+          <p>Ajouter un nouvel incrément au produit.</p>
+          <p>
+            Sélectionnez les stories qui vont être réalisées dans la prochaine itération. Elles sont prioritaires et
+            elles ont du sens. L'incrément du produit sera mis en production.
+          </p>
+        </section>
+        <section data-background="#0B3B0B">
+          <h2>Le comment</h2>
+          <p>
+            Le Sprint Planning est la réunion où les membres de l'équipe sélectionnent les stories. Pour cela, ils en
+            discutent, ils les estiment, ils élaborent les solutions.
+          </p>
+          <p>
+            En sortie de réunion, l'équipe s'est engagée à réaliser les items du Sprint Backlog
+          </p>
+          <aside class="notes">
+            En Scrum strict, le PO ne sélectionne pas les stories à inclure dans le sprint backlog.
+          </aside>
+        </section>
+        <section data-background="#0B3B0B">
+          <h2>Estimation relative</h2>
+          <p>
+            L'estimation est réalisée à l'aide d'un planning poker.<br>
+            Story point ou taille de T-shirt, peut importe.
+          </p>
+          <p>
+            C'est une estimation relative.
+          </p>
+          <aside class="notes">
+            Une échelle de 1 à 10 avec 8 barreaux suffit amplement.
+          </aside>
+        </section>
+        <section data-background="i/meteo.jpg">
+          <h2>Météo d'hier</h2>
+          <p style="background-color: rgba(11, 59, 11, 0.5); text-align: left;">
+            On utilise les données d'historique pour déterminer la capacité de réalisation de l'équipe.<br>
+            On nomme <b>vélocité</b> la somme des estimations associées aux stories terminées lors de la précédente
+            itération.
+          </p>
+          <p style="background-color: rgba(11, 59, 11, 0.5);">
+            La première fois, on est forcément dans le flou, mais avec l'expérience on s'améliore.
+          </p>
+        </section>
+        <section data-background="#0B3B0B">
+          <h2>Garder de la marge</h2>
+          <ul>
+            <li>Parce que les estimations sont imprécises</li>
+            <li>Pour la correction des anomalies (<i>no broken window</i>)</li>
+            <li>Pour les retours de démo</li>
+          </ul>
+          <p>
+            Un tiers de marge n'est pas exhorbitant.
+          </p>
+        </section>
+      </section>
+      <section id="bdd">
+        <section data-background="#3D3D3D">
+          <h1>Behavior Driven Development</h1>
+          <p>Le TDD avec les mots du métier</p>
+        </section>
+        <section id="tdd" data-background="#3D3D3D">
+          <h2>Test Driven Development</h2>
+          <p><img src="i/tdd_cycle.jpg" alt="Cycle du TDD" /></p>
+        </section>
+        <section data-background="#3D3D3D">
+          <h2>Principes du BDD</h2>
+          <ul>
+            <li>Elaborer le cas de test avant de réaliser le développement</li>
+            <li>Dans un langage simple et standardisé (semi-formel) compris de toute l'équipe</li>
+            <li>Et automatisable à l'aide d'un outil</li>
+            <ul>
+              <li>Cucumber, Fitnesse, JBehave</li>
+            </ul>
+          </ul>
+        </section>
+        <section id="givenwhenthen" data-background="#3D3D3D">
+          <h2>Given When Then</h2>
+          <p style="margin-left: 2em; text-align: left;">Scénario : [<i>Intitulé du scénario</i>]</p>
+          <ul>
+            <li><span class="keyword">Etant donné</span> [<i>que le monde était dans cet état</i>]</li>
+            <li><span class="keyword">Quand</span> [<i>l'action se produit</i>]</li>
+            <li><span class="keyword">Alors</span> [<i>le changement a eu lieu</i>]</li>
+          </ul>
+          <p><small>On peut ajouter des conditions supplémentaires avec des <span class="keyword">Et</span>.</small></p>
+          <aside class="notes">
+            Le When peut être vu comme une pré-condition.<br>
+            Et le Then comme une post-condition.<br><br>
+            Etant donné le CONTEXTE<br>
+            Quand l'EVENEMENT<br>
+            Alors le RESULTAT ATTENDU
+          </aside>
+        </section>
+        <section data-background="#3D3D3D">
+          <h2>Un exemple</h2>
+          <p style="background-color: #5D3908; color: #CCC ; font-size: smaller; margin: 0 3em; padding: 10px 3em; text-align: left">
+            En tant qu'adhérent<br>
+            Je veux emprunter un livre disponible<br>
+            Afin de le lire tranquillement chez moi
+          </p>
+          <p style="margin-left: 2em; text-align: left;">Scénario : Emprunt d'un premier livre</p>
+          <ul>
+            <li><span class="keyword">Etant donné</span> que je suis à jour de mon adhésion</li>
+            <li class="et"><span class="keyword">Et</span> que je n'ai pas de livre emprunté</li>
+            <li><span class="keyword">Quand</span> j'emprunte un livre</li>
+            <li><span class="keyword">Alors</span> j'ai en ma possession 1 livre emprunté</li>
+            <li class="et"><span class="keyword">Et</span> je dois le rendre dans un mois</li>
+          </ul>
+        </section>
+        <section data-background="#3D3D3D">
+          <h2>Un second exemple</h2>
+          <p style="margin-left: 2em; text-align: left;">Scénario : Emprunt refusé pour défaut d'adhésion</p>
+          <ul>
+            <li><span class="keyword">Etant donné</span> que je n'ai pas réglé mon adhésion</li>
+            <li class="et"><span class="keyword">Et</span> que j'ai en ma possession 2 livres empruntés</li>
+            <li><span class="keyword">Quand</span> j'emprunte un livre</li>
+            <li><span class="keyword">Alors</span> le système refuse le nouvel emprunt</li>
+            <li class="et"><span class="keyword">Et</span> il m'affiche le retard de règlement de mon adhésion</li>
+          </ul>
+        </section>
+        <section data-background="#3D3D3D">
+          <h2>Un troisième exemple</h2>
+          <p style="margin-left: 2em; text-align: left;">Scénario : Emprunt refusé pour retard</p>
+          <ul>
+            <li><span class="keyword">Etant donné</span> que je suis à jour de mon adhésion</li>
+            <li class="et"><span class="keyword">Et</span> que je suis en retard de retour d'1 livre emprunté</li>
+            <li><span class="keyword">Quand</span> j'emprunte un livre</li>
+            <li><span class="keyword">Alors</span> le système refuse le nouvel emprunt</li>
+            <li class="et"><span class="keyword">Et</span> il m'affiche l'objet du retard (livre, date de retour prévue)</li>
+          </ul>
+        </section>
+        <section data-background="#3D3D3D">
+          <h2>Un exemple avec des données</h2>
+          <p style="margin-left: 2em; text-align: left;">Scénario : Validation des emprunts</p>
+          <ul>
+            <li><span class="keyword">Etant donné</span> le stock de livres :</li>
+            <pre class="data">
+|ISBN|Titre         |Auteur  |Disponible|Date retour
+|1234|L'étranger    |A. Camus| vrai     |
+|1244|Les misérables|V. Hugo | faux     |2015-05-15</pre>
+            <li class="et"><span class="keyword">Et</span> que la date du jour est &lt;Date&gt;</li>
+            <li><span class="keyword">Quand</span> j'emprunte le livre &lt;ISBN&gt;</li>
+            <li><span class="keyword">Alors</span> le système &lt;Action&gt; le nouvel emprunt</li>
+            <li><span class="keyword">Exemples :</span></li>
+            <pre class="data">
+|Date       |ISBN |Action
+|2015-05-01 |1234 |enregistre
+|2015-05-01 |1244 |refuse
+|2015-05-30 |1244 |enregistre</pre>
+          </ul>
+        </section>
+        <section data-background="#3D3D3D">
+          <h2>Atelier</h2>
+          <p>
+            A vous de jouer, vous avez 30 minutes.
+          </p>
+        </section>
+      </section>
+      <section id="demo">
+        <section data-background="#D2B48C">
+          <h1>Démonstration</h1>
+          <p>Fier de ce qu'on a fait</p>
+        </section>
+        <section data-background="#D2B48C">
+          <h2>Préparation</h2>
+          <ul>
+            <li>Une plate-forme opérationnelle</li>
+            <li>Un jeu de données</li>
+            <li>Le matériel nécessaire</li>
+            <ul>
+              <li>PC, écran de projection, téléconférence, ...</li>
+            </ul>
+            <li>Mais pas plus de 2 heures !</li>
+          </ul>
+        </section>
+        <section data-background="#D2B48C">
+          <h2>Les invités</h2>
+          <ul>
+            <li>L'équipe, c'est elle qui organise</li>
+            <li>Le Product Owner</li>
+            <li>Les invités du PO&nbsp;:</li>
+            <ul>
+              <li>Le sponsor</li>
+              <li>Des utilisateurs clés (ou pas)</li>
+              <li>Le directeur, l'expert, le coach agile</li>
+            </ul>
+          </ul>
+        </section>
+        <section data-background="#D2B48C">
+          <h2>L'ordre du jour</h2>
+          <ul>
+            <li>Bilan de l'itération</li>
+            <ul>
+              <li>Rappel de l'objectif initial</li>
+              <li>Fini versus Non fini</li>
+              <li>Problèmes rencontrés et solutions trouvées</li>
+            </ul>
+            <li>Démonstration du réalisé</li>
+            <ul>
+              <li>Recueil des retours, des idées</li>
+            </ul>
+            <li>Préparation du futur</li>
+          </ul>
+          <aside class="notes">
+            La démo n'est jamais faite avec des slides
+          </aside>
+        </section>
+        <section data-background="#D2B48C">
+          <h2>Les objectifs</h2>
+          <ul>
+            <li>Recueillir des retours</li>
+            <li>Entretenir la cohésion d'équipe</li>
+            <li>Améliorer le produit</li>
+          </ul>
+          <p class="fragment">
+            C'est la rétrospective du Produit
+          </p>
+        </section>
+      </section>
+      <section id="roti">
+        <section data-background="#46656A">
+          <h1>
+            Le ROTI
+          </h1>
+          <p>
+
+          </p>
+        </section>
+        <section data-background="#46656A">
+          <h2>
+            Return On Time Invested
+          </h2>
+          <p>POULET en français, selon la définition de Pablo Pernot:</p>
+          <p>Performance Octroyée selon l'Utilité et la Légitimité du sujet En relation avec le Temps passé</p>
+        </section>
+        <section data-background="#46656A">
+          <h2>
+            Return On Time Invested
+          </h2>
+          <ul>
+            <li style="background-image: url('i/rotione.png');">Totalement inutile, j'ai perdu mon temps</li>
+            <li style="background-image: url('i/rotitwo.png');">Négatif, trop de temps par rapport à la valeur reçue</li>
+            <li style="background-image: url('i/rotithree.png');">Moyen, équilibre entre gain et temps passé</li>
+            <li style="background-image: url('i/rotifour.png');">Positif, gain supérieur au temps passé</li>
+            <li style="background-image: url('i/rotifive.png');">Réellement utile, vaut largement le temps passé</li>
+          </ul>
+        </section>
+      </section>
       <section id="end">
         <h1>The End</h1>
         <p style="font-size: smaller ;text-align: left;">
@@ -755,9 +1052,7 @@
           - <a href="http://15marches.fr/numerique/pitchandloveau-startupweekend">Elevator Pitch sentence</a> issue de 15Marches<br>
           - <a href="https://commons.wikimedia.org/wiki/File:Cain_Henri_Vidal_Tuileries.jpg">Caïn par Henri Vidal</a>,
             photo de Marie-Lan Nguyen<br>
-          - <a href="http://www.bouzin-agile.fr/?post/2013/03/12/KISS-Keep-it-Simple-Stupid">Illustrations du KISS</a> empruntées au site bouzin-agile<br>
-          - Photo de tableau agile empruntée au site <a href="http://theagilepirate.net/">The Agile Pirate</a><br>
-          - <a href="http://marshmallowchallenge.com">Marshmallow Challenge</a> et illustration en provenance du site éponyme
+          - <a href="http://wellington.pm.org/archive/200606/tdd/slide10.html">Cycle du TDD</a> emprunté à Grant McLean sur le site wellington.pm.org<br>
           </p>
       </section>
     </div>
