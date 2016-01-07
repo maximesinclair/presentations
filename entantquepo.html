@@ -302,7 +302,7 @@
               <li>Diminution de la productivité de l'équipe.</li>
               <li>Risque de bugs de regression plus important.</li>
             </ul>
-            <li>Manque de tests unitaires</li>
+            <li>Manque de tests automatisés</li>
             <ul>
               <li>Plus d'anomalies en phase de qualification.</li>
               <li>Risque de devoir décaler la date de livraison.</li>
@@ -317,6 +317,11 @@
               <li>Difficile de trouver des compétences intéressées.</li>
             </ul>
           </ul>
+          <aside class="notes">
+            On ne fait jamais assez attention à la dette technique car on n'en a pas toujours connaissance.<br>
+            Solution : Ecouter son équipe<br>
+            Pour l'obsolescence: analogie du pneu, faut-il attendre qu'il crève?
+          </aside>
         </section>
         <section id="ponedoitpas" data-background="#E6E6FA">
           <h2>Le PO ne doit pas</h2>
@@ -596,7 +601,7 @@
           <h2>Etape 3 - Les parcours</h2>
           <p><img src="i/mylibrarysm3.png" alt="StoryMap" /></p>
         </section>
-        <section data-background="#61380B">
+        <section id="moscow" data-background="#61380B">
           <h2>Etape 4 - MoSCoW</h2>
           <p><img src="i/mylibrarysm4.png" alt="StoryMap" /></p>
         </section>
@@ -618,7 +623,7 @@
             <p>Que des Must, alors pas agile</p>
           </aside>
         </section>
-        <section data-background="#61380B">
+        <section id="mvp" data-background="#61380B">
           <h2>Etape 5 - Les MVP</h2>
           <p><img src="i/mylibrarysm5.png" alt="StoryMap" /></p>
         </section>
@@ -627,6 +632,37 @@
           <p>
             A vous de jouer, vous avez 30 minutes.
           </p>
+        </section>
+        <section data-background="#61380B">
+          <h2>Priorisation</h2>
+          <p>
+            Dans le cas d'un projet important avec un grand nombre de fonctions déjà connues, la priorisation par
+            MoSCoW peut être difficile. Passer par une estimation de la valeur et éventuellement de la complexité peut
+            être nécessaire.
+          </p>
+          <p>
+            Le Planning Poker est une option mais il risque d'être long. Essayez le Bucket System.
+          </p>
+        </section>
+        <section id="bucketsystem" data-background="#61380B">
+          <h2>Bucket System</h2>
+          <p>Une alternative rapide au planning poker.</p>
+          <p><img src="i/mylibrarybucket.png" alt="Bucket System" /></p>
+        </section>
+        <section data-background="#61380B">
+          <h2>Bucket System</h2>
+          <ol>
+            <li>Etaler en ligne un jeu de Planning Poker</li>
+            <li>Prendre une US au hasard et la placer dans le bucket 8</li>
+            <li>Prendre une seconde US et discuter de sa valeur avec l'ensemble des participants. La
+            placer dans le bon bucket. Prendre une troisième US et répéter l'opération.</li>
+            <li>Distribuer équitablement les US restantes aux participants. Demander à chacun de placer ses US dans les
+            bons buckets.</li>
+            <li>Pour finir, vérifier l'ensemble des estimations collectivement. Discuter des désaccords.</li>
+          </ol>
+          <aside class="notes">
+            Peut aussi être utilisé pour estimer la complexité.<br>Mais pas avec les mêmes participants.
+          </aside>
         </section>
       </section>
       <section>
@@ -765,7 +801,7 @@
             Si le livre n'est pas disponible, proposer de le réserver.</small>
           </p>
         </section>
-        <section data-background="#D2B48C">
+        <section id="storysplit" data-background="#D2B48C">
           <h2>Un exemple de découpage</h2>
           <p style="background-color: #CF8B33; text-align: left">
             En tant qu'adhérent<br>
@@ -777,6 +813,9 @@
             Je veux emprunter un livre disponible<br>
             Afin de le lire tranquillement chez moi
           </p>
+          <aside class="notes">
+            Et on peut imaginer une 3e story sur la réservation d'un livre.
+          </aside>
         </section>
         <section id="technicalstory" data-background="#D2B48C">
           <h2>Technical Story</h2>
@@ -824,7 +863,7 @@
           <h2>Estimation relative</h2>
           <p>
             L'estimation est réalisée à l'aide d'un planning poker.<br>
-            Story point ou taille de T-shirt, peut importe.
+            Story point ou taille de T-shirt, peu importe.
           </p>
           <p>
             C'est une estimation relative.
@@ -913,7 +952,7 @@
           <h2>Un second exemple</h2>
           <p style="margin-left: 2em; text-align: left;">Scénario : Emprunt refusé pour défaut d'adhésion</p>
           <ul>
-            <li><span class="keyword">Etant donné</span> que je n'ai pas réglé mon adhésion</li>
+            <li><span class="keyword">Etant donné</span> que je n'ai pas renouvelé mon adhésion</li>
             <li class="et"><span class="keyword">Et</span> que j'ai en ma possession 2 livres empruntés</li>
             <li><span class="keyword">Quand</span> j'emprunte un livre</li>
             <li><span class="keyword">Alors</span> le système refuse le nouvel emprunt</li>
