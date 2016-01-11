@@ -95,6 +95,15 @@
         margin-left: 2em;
       }
 
+      section#protocoldemo ol ul {
+        list-style: none;
+      }
+      section#protocoldemo ol ul li {
+        color: #555;
+        font-size: smaller;
+        font-style: italic;
+      }
+
       section#roti ul {
         list-style: none;
         margin: 0; padding: 0;
@@ -715,13 +724,18 @@
             Afin de <i>pouvoir emprunter des livres</i><br><br>
           </p>
           <p style="margin: auto; text-align: left; width: 60%">
-            En tant que <i>client</i><br>
-            Je veux <i>payer mon achat</i><br>
-            Afin de <i>l'acquérir</i>
+            En tant que <i>jardinier</i><br>
+            Je veux <i>une pelle</i><br>
+            Afin de <i>creuser un trou</i>
           </p>
           <p style="margin-left: 4em; margin-top: -4em; text-align: left; transform: rotate(-16deg);" class="fragment">
             _______________________
           </p>
+          <aside class="notes">
+            Une différence entre ces 2 exemples ?<br><br>
+            Pas assez de contexte : quelle taille de trou ? pour planter quoi ?<br>
+            Trop orienté solution : la pelle !
+          </aside>
         </section>
         <section id="invest" data-background="#D2B48C">
           <h2>INVEST</h2>
@@ -1037,20 +1051,47 @@
         <section data-background="#D2B48C">
           <h2>L'ordre du jour</h2>
           <ul>
-            <li>Bilan de l'itération</li>
+            <li>Ouverture</li>
+            <li>Liste des stories prévues</li>
             <ul>
-              <li>Rappel de l'objectif initial</li>
-              <li>Fini versus Non fini</li>
-              <li>Problèmes rencontrés et solutions trouvées</li>
+              <li>Finies (vision équipe) vs Non finies</li>
+              <li>Les non-démontrables</li>
             </ul>
-            <li>Démonstration du réalisé</li>
+            <li>Démo avec le protocole 1-2-3</li>
+            <li>Calcul de la vélocité</li>
+            <li>Feedback global et tour de table</li>
             <ul>
-              <li>Recueil des retours, des idées</li>
+              <li>Futur du produit</li>
             </ul>
-            <li>Préparation du futur</li>
+            <li>Cloture</li>
           </ul>
           <aside class="notes">
             La démo n'est jamais faite avec des slides
+          </aside>
+        </section>
+        <section id="protocoldemo" data-background="#D2B48C">
+          <h2>1-2-3 démo</h2>
+          <p>
+            Pour chaque story démontrée&nbsp;:
+          </p>
+          <ol>
+            <li>Contexte</li>
+            <ul class="fragment">
+              <li>Le PO donne le contexte de la story et rappelle ses principales conditions de satisfaction</li>
+            </ul>
+            <li>Démo de la story</li>
+            <ul class="fragment">
+              <li>L’Equipe fait la demo de la story en montrant qu’elle répond aux conditions de satisfaction</li>
+            </ul>
+            <li>Feedback</li>
+            <ul class="fragment">
+              <li>Le PO qualifie la story (Done…) et l’Assemblée peut commenter, questionner et donner son retour
+                sur ce qu’elle vient de voir</li>
+            </ul>
+          </ol>
+          <aside class="notes">
+            Contexte : et conditions de satisfaction<br>
+            Feedback : à minima du PO
           </aside>
         </section>
         <section data-background="#D2B48C">
@@ -1072,8 +1113,6 @@
       <section id="end">
         <section>
           <h1>The End</h1>
-          <p>
-          </p>
         </section>
         <section>
           <h2>Le ROTI</h2>
@@ -1102,6 +1141,7 @@
             - <a href="https://commons.wikimedia.org/wiki/File:Cain_Henri_Vidal_Tuileries.jpg">Caïn par Henri Vidal</a>,
               photo de Marie-Lan Nguyen<br>
             - <a href="http://wellington.pm.org/archive/200606/tdd/slide10.html">Cycle du TDD</a> emprunté à Grant McLean sur le site wellington.pm.org<br>
+            - <a href="http://www.qualitystreet.fr/2014/09/08/truc-de-coach-1-2-3-demo-notre-protocole-demo/">Protocole Démo</a> emprunté à Jean Claude Grosjean
             </p>
         </section>
       </section>
