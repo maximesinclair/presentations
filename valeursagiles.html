@@ -29,7 +29,7 @@
         letter-spacing: 4px;
         text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);
       }
-      div.reveal h2 {
+      div.reveal h2, div.reveal h3 {
         font-family: 'Mouse Memoirs', sans-serif;
       }
       div.reveal ul ul {
@@ -84,6 +84,10 @@
       }
       section#quizz h2 {
         font-size: 2em;
+        text-transform: none;
+      }
+      section#quizz h3 {
+        font-size: 1.5em;
         text-transform: none;
       }
       section#roti ul {
@@ -1330,9 +1334,9 @@
         <section id="quizz">
           <section data-background="#FFF">
             <h1>
-              Vrai ou Faux
+              Quizz
             </h1>
-            <p>La main ouverte pour Vrai, le poing fermé pour Faux</p>
+            <p>La main ouverte pour Vrai, le poing fermé pour Faux,<br>les doigts pour les chiffres</p>
           </section>
           <section data-background="#FFF">
             <h2>
@@ -1340,14 +1344,6 @@
             </h2>
             <aside class="notes">
               Oui mais c'est un maximum si le sprint dure 1 mois.
-            </aside>
-          </section>
-          <section data-background="#FFF">
-            <h2>
-              Suite au Sprint Planning, il est interdit d'ajouter ou modifier des tâches<br>durant le sprint.
-            </h2>
-            <aside class="notes">
-              Les tâches oui mais pas les PBI.
             </aside>
           </section>
           <section data-background="#FFF">
@@ -1361,6 +1357,20 @@
             </h2>
           </section>
           <section data-background="#FFF">
+            <h3>Le sprint de 3 semaines a commencé vendredi, avec une équipe de 10 personnes. 
+            Le lundi lors du scrum du matin, on apprend qu’un développeur s’est cassé le bras droit au ski, il est plâtré pour une semaine.
+            </h3>
+            <ol>
+                <li>Le Scrum Master interdit le ski à toute l’équipe jusqu’à la fin de la release</li>
+                <li>L’équipe diminue sa capacité sur le sprint en enlevant des stories au périmètre</li>
+                <li>On lui trouve un remplaçant</li>
+                <li>On verra ce que ça donne et en attendant on lui achète une souris pour gaucher</li>
+            </ol>
+            <aside class="notes">
+              Réponse 4, il est trop tôt pour retirer du périmètre.
+            </aside>
+          </section>
+          <section data-background="#FFF">
             <h2>
               Une équipe est cross-fonctionnelle quand elle dispose des compétences suffisantes<br>
               pour réaliser le projet.
@@ -1368,8 +1378,23 @@
           </section>
           <section data-background="#FFF">
             <h2>
-              Utiliser Jira sur le projet,<br>c'est déjà faire de l'agile.
+              En fin de Sprint Scrum, on doit livrer le produit en production.
             </h2>
+            <aside class="notes">
+              Non, pas obligatoirement. On parle de Realease.
+            </aside>
+          </section>
+          <section data-background="#FFF">
+            <h3>Une story planifiée pour le prochain sprint est jugée finalement inutile par le Product Owner.</h3>
+            <ol>
+              <li>On la supprime</li>
+              <li>On la fait quand même car elle est dans le plan de release</li>
+              <li>On la remplace par une autre de même taille et on la garde en fin de backlog</li>
+              <li>On diminue sa priorité</li>
+            </ol>
+            <aside class="notes">
+              Réponse 1
+            </aside>
           </section>
           <section data-background="#FFF">
             <h2>
@@ -1382,22 +1407,18 @@
             </h2>
           </section>
           <section data-background="#FFF">
-            <h2>
-              En fin de Sprint Scrum, on doit livrer le produit en production.
-            </h2>
-            <aside class="notes">
-              Non, pas obligatoirement. On parle de Realease.
-            </aside>
+            <h3>Une personne dans l’équipe perturbe les autres. Vous êtes Scrum Master, comment réagissez-vous ?</h3>
+            <ol>
+              <li>Vous la virez de l'équipe, la majorité est d’accord</li>
+              <li>Vous ne faites rien, il n’y a pas de chef avec Scrum</li>
+              <li>Vous faites un rapport à la direction</li>
+              <li>Vous l’invitez à boire un coup pour lui proposer d’être le Scrum Master du prochain sprint</li>
+            </ol>
           </section>
           <section data-background="#FFF">
             <h2>
               Dans un sytème kanban, il est possible de faire revenir une carte à l’étape précédente
               (en cas de bug par exemple).
-            </h2>
-          </section>
-          <section data-background="#FFF">
-            <h2>
-              Lors du Sprint Planning il est nécessaire d'estimer les PBI qui ne le sont pas déjà.
             </h2>
           </section>
           <section data-background="#FFF">
@@ -1454,7 +1475,8 @@
             - <a href="http://www.bouzin-agile.fr/?post/2013/03/12/KISS-Keep-it-Simple-Stupid">Illustrations du KISS</a> empruntées au site bouzin-agile<br>
             - <a href="http://www.derekhuether.com/2011/07/07/waste-in-software-projects/">Waste In Software Projects</a>, de l'usage des fonctions développées<br>
             - Photo de tableau agile empruntée au site <a href="http://theagilepirate.net/">The Agile Pirate</a><br>
-            - <a href="http://marshmallowchallenge.com">Marshmallow Challenge</a> et illustration en provenance du site éponyme
+            - <a href="http://marshmallowchallenge.com">Marshmallow Challenge</a> et illustration en provenance du site éponyme<br>
+            - Le <a href="http://www.aubryconseil.com/serie/Le%20quiz%20Scrum">Quizz Scrum</a> de Claude Aubry
             </p>
         </section>
       </div>
