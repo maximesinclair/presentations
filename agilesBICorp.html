@@ -1,0 +1,834 @@
+<!doctype html>
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Introduction à l'Agile</title>
+
+    <meta name="description" content="A short presentation of agile methods.">
+    <meta name="author" content="Maxime">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+    <style type="text/css">
+
+      @import url(./lib/font/mouse-memoirs/mouse-memoirs.css);
+
+      section.lightbackground, section.lightbackground h1, section.lightbackground h2 {
+        color: #555;
+      }
+      /* Font and shadow for h1 */
+      div.reveal h1 {
+        font-family: 'Mouse Memoirs', sans-serif;
+        letter-spacing: 4px;
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);
+      }
+      div.reveal h2, div.reveal h3 {
+        font-family: 'Mouse Memoirs', sans-serif;
+      }
+      div.reveal ul ul {
+        font-size: smaller;
+      }
+      div.reveal strong {
+        font-size: 110%;
+      }
+      div.reveal small {
+        font-size: 80%;
+      }
+      div.reveal p.manifest {
+        font-size: 80%;
+      }
+      /* No image background and no border */
+      div.reveal section img {
+        background-color: transparent;
+        border: 0;
+        box-shadow: none;
+        margin: 0;
+      }
+      /* Photo shadow */
+      div.reveal section img.photo {
+        box-shadow: 0 0 40px #000;
+      }
+
+      /* small align */
+      div.slides section small {
+        vertical-align: middle;
+      }
+
+      .lightcontrast {
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+      /* No image background
+      section#adaptation section img {
+        background-color: transparent;
+        box-shadow: none;
+      } */
+      section#pratiques .def {
+        background-color: #088;
+        border-radius: 10px;
+        padding: 10px 20px;
+        text-align: left;
+      }
+      section#pratiques ul.goal {
+        background-color: #9AB45A;
+        border-radius: 10px;
+        margin: 0;
+        padding: 10px 20px 10px 50px;
+        text-align: left;
+      }
+      section#quizz h2 {
+        font-size: 2em;
+        text-transform: none;
+      }
+      section#quizz h3 {
+        font-size: 1.5em;
+        text-transform: none;
+      }
+      section#roti ul {
+        list-style: none;
+        margin: 0; padding: 0;
+      }
+      section#roti ul li {
+        background: url("i/rotione.png") no-repeat 0 0;
+        line-height: 100px;
+        margin: 0;
+        padding: 0 0 0.6em 130px;
+      }
+    </style>
+    <!-- Code syntax highlighting
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    -->
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section id="title">
+          <section data-background="i/planebackground.jpg">
+            <h1>Introduction à l'Agile</h1>
+            <p>
+              <small>F pour le fullscreen et S pour les speakernotes</small>
+            </p>
+          </section>
+          <section data-background="i/planebackground.jpg">
+            <h2>Plan</h2>
+            <ol>
+              <li>En 2 mots</li>
+              <li>Quelques éléments de contexte</li>
+              <li>Le manifeste</li>
+              <li>Les 4 valeurs, l'une après l'autre...</li>
+              <li>Quelques pratiques</li>
+              <li>Pause</li>
+              <li>Surprise</li>
+              <li>Scrum et Kanban</li>
+              <li>Interrogation</li>
+            </ol>
+          </section>
+        </section>
+        <!-- Rappels historiques -->
+        <section id="context">
+          <section data-background="i/greenscreen.png">
+            <h1>Quelques éléments de contexte</h1>
+            <p>
+              <small>Pour ceux qui sont nés après le <a href="http://fr.wikipedia.org/wiki/Epoch">1/1/1970</a></small>
+            </p>
+          </section>
+          <section>
+            <h2>Naissance du logiciel</h2>
+            <p>De la seconde guerre mondiale jusqu'à la fin des années 1960, un programme informatique:</p>
+            <ul>
+              <li>consiste en des traitements batchs</li>
+              <li>automatise des processus répétitifs</li>
+              <li>est essentiellement codé en assembleur</li>
+              <li>économise les bits et les cycles CPU</li>
+            </ul>
+            <p><img src="i/carteperfo.png"></p>
+            <aside class="notes">
+              Le logiciel est livré gratuitement, seul le hardware est payant.
+            </aside>
+          </section>
+          <section id="firstcrisis" data-background="i/garmisch1968.jpg">
+            <h2>La première crise du logiciel</h2>
+            <p>Fin des années 60, début des 70</p>
+            <ul>
+              <li>En 10 ans, la puissance des ordinateurs est multipliée par 100, et la productivité du développement par 4</li>
+              <li>Premier colloque de Génie Logiciel</li>
+              <li>On cherche à industrialiser le développement logiciel</li>
+              <li>Invention du développement en cascade</li>
+            </ul>
+            <aside class="notes">
+              <ul>
+                <li>Loi de Moore: nombre de transistors double tous les 2 ans dans une puce</li>
+                <li>L'IBM 360 est livré avec 1 million de LOC</li>
+                <li>Colloque de Garmisch (RFA) en octobre 1968 financé par l'OTAN</li>
+                <li>En aout 1970, Winston W. Royce publie l'article "Managing the development of large software systems"
+                    où il décrit le modèle de développement en cascade.</li>
+                <li>Objectif de découper en étapes pour mieux maîtriser.</li>
+              </ul>
+            </aside>
+          </section>
+          <!--<section>
+            <h2>La crise encore</h2>
+            <p>Dans les années 90, rien n'a changé (enfin presque)</p>
+            <ul>
+              <li>La micro-informatique est dans les entreprises</li>
+              <li>Les outils d'industrialisation du développement se sont développés
+              <ul>
+                <li>Les langages COBOL, C, Smalltalk, C++, ADA et bientôt Java</li>
+                <li>Les Ateliers de Génie Logiciel, les éditeurs, débogueurs, le makefile</li>
+                <li>Les outils de gestion de versions, des exigences, des tests</li>
+              </ul></li>
+              <li>Et les méthodes aussi
+                <ul>
+                  <li>SADT, Cap Gemini SDM, SSADM, DoD-Std-2167</li>
+                  <li>MERISE en France</li>
+                </ul>
+              </li>
+            </ul>
+            <aside class="notes">
+              Dans le fond, les outils et les process ont bien progressé mais le dev logiciel est toujours difficile.
+              <ul>
+                <li>L'interface graphique Macintosh 1984, Windows, OS/2 (fenêtres,souris) s'impose</li>
+                <li>Le réseau de télécommunication pointe son nez</li>
+                <li>Smalltalk, C++ languages objets</li>
+                <li>ADA appel d'offre du DoD en 1977, conçu comme un langage universel, fiable et sûr</li>
+                <li>Qui dit AGL, dit L4G (CASE en english), AD/Cycle d'IBM</li>
+                <li>SADT pour Structured Analysis and Design Technique, SDM pour System Development Methodology</li>
+                <li>SSADM pour Structured systems analysis and design method créé au UK</li>
+                <li>DoD-Std-2167 est un standard de développement logiciel du DOD qui impose une méthode en cascade</li>
+              </ul>
+            </aside>
+          </section>-->
+          <section id="chaosreport">
+            <h2>La crise encore</h2>
+            <p>Le Standish Group publie en 1995 le premier Chaos Report</p>
+            <blockquote>
+              &ldquo;Software development projects are in chaos, and we can no longer imitate the three
+              monkeys -- hear no failures, see no failures, speak no failures.&rdquo;
+            </blockquote>
+            <ul>
+              <li>250 milliards de $ dépensés par an aux USA</li>
+              <li>Seuls 16,2% des projets sont on-time et on-budget</li>
+            </ul>
+          </section>
+          <section>
+            <h2>La métaphore du pont</h2>
+            <p><img src="i/bridgechaosreport.png"></p>
+            <p><small>Cette photo illustre la première page du premier Chaos Report.</small></p>
+            <aside class="notes">
+              Préambule du rapport: c'est en mesurant nos actions qu'on progresse
+              A cette époque, l'idée dominante consiste à appliquer au dev logiciel ce qui a marché pour la
+              construction
+            </aside>
+          </section>
+          <section>
+            <h2>La métaphore du pont</h2>
+            <p>
+              Le développement logiciel est assimilé à une pratique d'ingénierie telle que la construction
+              ou la mécanique.
+            </p>
+            <ul>
+              <li>La conception est la phase créative qu'il est difficile d'estimer.</li>
+              <li>La fabrication est la phase la plus coûteuse.</li>
+              <li>Donc, une conception très détaillée permet de garantir une fabrication optimale.</li>
+            </ul>
+            <aside class="notes">
+              C'est ce qu'on trouve dans les méthodes et dans les AGL (générateurs de code)
+            </aside>
+          </section>
+          <section data-background="i/waterfall.png">
+            <h2>Au bout du pont</h2>
+            <ul class="fragment lightcontrast">
+              <li>Un découpage en multiple phases.</li>
+              <li>Des phases découpées en étapes.</li>
+              <li>Des documents en abondance et toujours à valider.</li>
+              <li>Des équipes de spécialistes sans vue d'ensemble.</li>
+              <li>De la sous-traitance, de l'off-shore.</li>
+              <li>Un effet tunnel.</li>
+              <li>Beaucoup d'énergie passée à estimer, planifier, découper, affecter&nbsp;&hellip;</li>
+            </ul>
+            <aside class="notes">
+            </aside>
+          </section>
+          <section>
+            <h2>Une ingénierie pas comme les autres</h2>
+            <p>
+              Un groupe d'irréductibles skieurs refuse<br>
+              l'analogie de la construction.
+            </p>
+            <p class="fragment">
+              Coder n'est pas fabriquer.<br>
+              Fabriquer, c'est compiler.<br><br>
+              La fabrication est la phase la moins coûteuse, elle est automatisée.
+              La conception, phase créative, qui exige de la compétence, va jusqu'à l'écriture du code.
+            </p>
+            <aside class="notes">
+              <ul>
+                <li>Jack Reeves suggère qu'en réalité le code source est un document de conception</li>
+                <li>http://www.bleading-edge.com/Publications/C%2B%2BJournal/Cpjour2.htm</li>
+              </ul>
+            </aside>
+          </section>
+          <section id="lightmethods">
+            <h2>Les méthodes légères</h2>
+            <p>
+              En réaction aux "plan-driven methodologies" ou "méthodes&nbsp;lourdes"
+            </p>
+            <ul>
+              <li>Dynamic systems development method ou DSDM [1994]</li>
+              <li>Scrum [1995]</li>
+                <ul><li>par Ken Schwaber et Jeff Sutherland</li></ul>
+              <li>eXtreme Programming [1996]</li>
+                <ul><li>par Kent Beck, Ward Cunningham et Ron Jeffries</li></ul>
+              <li>Crystal Clear [1996]</li>
+                <ul><li>par Alistair Cockburn</li></ul>
+              <li>Feature-Driven Development ou FDD [1997]</li>
+                <ul><li>par Jeff De Luca</li></ul>
+            </ul>
+            <aside class="notes">
+              <ul>
+                <li>DSDM cherche à structurer le développement RAD</li>
+                <li>XP est très orienté technique de développement, tests unitaires, pair programming</li>
+              </ul>
+            </aside>
+          </section>
+        </section>
+        <section id="manifest">
+          <section data-background="i/snowbirdgondola.jpg">
+            <h1>Le manifeste agile</h1>
+            <p><small>C'est où les pistes ?</small></p>
+          </section>
+          <section class="lightbackground" data-background="i/manifeste.jpg">
+            <h2>2 jours à la montagne</h2>
+            <p>
+              Du 11 au 13 février 2001, 17 "organizational anarchists" se retrouvent à Snowbird dans l'Utah,
+              pour discuter méthodes de développement logiciel.
+            </p>
+            <p>
+              Ils aboutissent à la signature du <strong>Manifeste Agile</strong>
+            </p>
+          </section>
+          <section data-background="#5488C3">
+            <h2>A vous de jouer !</h2>
+            <p>Retrouver les valeurs du manisfeste</p>
+          </section>
+          <section data-background="#5488C3">
+            <h2>Les 12 principes</h2>
+            <p>Dans le PuissancePoint</p>
+          </section>
+        </section>
+        <section id="pratiques">
+          <section>
+            <h1>Quelques Pratiques</h1>
+            <p><small>Un ensemble de pratiques au service de valeurs</small></p>
+          </section>
+          <section id="radiateur">
+            <h2>Radiateur d'Information</h2>
+            <p class="def">
+              Affichage mural pour diffuser une information pertinente : tableau des tâches,
+              nombre total de tests, ...
+            </p>
+            <ul class="goal">
+              <li>l'équipe n'a rien à cacher (notamment à ses clients)</li>
+              <li>l'équipe n'a rien à <i>se</i> cacher: elle admet et confronte ses difficultés</li>
+              <li>provoque la discussion</li>
+            </ul>
+          </section>
+          <section data-background="i/boardscrumban.jpg">
+            <h2>Radiateur d'Information</h2>
+          </section>
+          <section data-background="i/boardagilepirate.jpg">
+            <h2>Radiateur d'Information</h2>
+          </section>
+          <section id="daily">
+            <h2>Daily Scrum</h2>
+            <p class="def">
+              Réunion quotidienne d'un quart d'heure, debout.<br>
+              Qu’as tu fait depuis le dernier scrum ? Qu’est ce que tu dois faire ?
+              Qu’est ce qui t’empêche de faire ton travail ?
+            </p>
+            <ul class="goal">
+              <li>favorise la circulation d'informations importantes</li>
+              <li>permet de se synchroniser</li>
+              <li>contribue à la cohésion de l'équipe</li>
+            </ul>
+            <aside class="notes">
+              Aussi nommé Standup Meeting, Daily Meeting
+            </aside>
+          </section>
+          <section id="backlog">
+            <h2>Backlog</h2>
+            <p class="def">
+              Liste de <span class="fragment grow highlight-red">toutes</span> les fonctionalités ou tâches
+              nécessaires à la réalisation du projet.
+            </p>
+            <ul class="goal">
+              <li>pour les prioriser (ordonnées par ordre d'importance)</li>
+              <li>donne la vision d'ensemble</li>
+            </ul>
+            <aside class="notes">
+              Dès qu'un nouvel item est considéré nécessaire, il doit être ajouté au backlog.
+            </aside>
+          </section>
+          <section>
+            <h2>Backlog</h2>
+            <p>Dans le backlog, on trouve, ligne après ligne&nbsp;:</p>
+            <ul>
+              <li>des anomalies à corriger</li>
+              <li>des petites fonctionalités</li>
+              <li>des tâches techniques</li>
+              <li>des modules entiers à développer</li>
+            </ul>
+            <p>
+              L'item de backlog est une simple phrase qui va être affinée (précisée, détaillée, découpée)
+              au fur et à mesure du besoin.<br>
+            </p>
+          </section>
+          <section id="userstory">
+            <h2>User Story</h2>
+            <p class="def">
+              Histoire utilisateur représentant un incrément du logiciel.<br>
+              Son expression doit pouvoir tenir sur un post'it.
+            </p>
+            <ul class="goal">
+              <li>découpe le travail à faire</li>
+              <li>apporte de la valeur au client</li>
+              <li>unité de priorisation, de négociation</li>
+            </ul>
+          </section>
+          <section data-background="i/3userstories.jpg" data-background-transition="zoom">
+            <h2>User Story</h2>
+          </section>
+          <section id="planningpoker">
+            <h2>Planning Poker</h2>
+            <p class="def">
+              Estimation collective et relative des user stories.<br>
+              L'estimation est faite en points de complexité ou en taille de T-shirt.<br>
+              Tout le monde dévoile son estimation au même moment.
+            </p>
+            <ul class="goal">
+              <li>vérifier la faisabilité d'une user story</li>
+              <li>concevoir une solution</li>
+              <li>estimer pour prioriser</li>
+            </ul>
+          </section>
+          <section id="defofdone">
+            <h2>Definition of Done</h2>
+            <p class="def">
+              Définition formelle des critères permettant de dire qu'une story est terminée.
+            </p>
+            <ul class="goal">
+              <li>éviter la question : "c'est fini-fini&nbsp;?"</li>
+              <li>checklist permettant de ne pas oublier des activités</li>
+              <li>définition claire de ce qui va être comptabilisé</li>
+            </ul>
+            <aside class="notes">
+              Exemple de liste de critères: codé, testé unitairement, code revu, documentation mise à jour, cas de test passé.
+            </aside>
+          </section>
+          <section id="retro">
+            <h2>Rétrospective</h2>
+            <p class="def">
+              Réunion régulière de l'équipe pour faire le bilan de la période passée et réfléchir
+              aux améliorations possibles.
+            </p>
+            <ul class="goal">
+              <li>améliore le fonctionnement de l'équipe</li>
+              <li>favorise l'auto-organisation</li>
+            </ul>
+          </section>
+          <section id="pairworking">
+            <h2>Programmation en Binôme</h2>
+            <p class="def">
+               2 développeurs travaillent ensemble sur un même poste de travail.<br>Celui qui rédige le code est
+               appelé conducteur, l'autre, appelé observateur, l'assiste. Ils échangent leur rôle régulièrement.
+            </p>
+            <ul class="goal">
+              <li>améliore la qualité du code produit</li>
+              <li>partage la connaissance</li>
+              <li>meilleure capacité à rester concentré</li>
+            </ul>
+            <aside class="notes">
+              Pair Programming en anglais est une pratique XP.<br>
+              Le conducteur décrit à haute voix ce qu'il fait. <br>
+              On peut aussi faire du pair-testing.
+            </aside>
+          </section>
+        </section>
+        <section id="pause">
+          <h1>Pause</h1>
+        </section>
+        <section id="scrum">
+          <section data-background="#330033">
+            <h1>
+              Scrum
+            </h1>
+            <p>
+              LA méthode agile
+            </p>
+          </section>
+          <section data-background="#330033">
+            <h2>
+              Origine
+            </h2>
+            <p>
+              Ken Schwaber et Jeff Sutherland ont présenté Scrum pour la première fois à la conférence OOPSLA en 1995.
+              <br>
+              <br>Scrum est le résultat de bonnes pratiques du développement logiciel observées
+            </p>
+          </section>
+          <section data-background="#330033">
+            <h2>
+              3 piliers
+            </h2>
+            <ol>
+              <li>Transparence</li>
+              <li>Inspection</li>
+              <li>Adaptation</li>
+            </ol>
+          </section>
+          <section data-background="#330033">
+            <h2>
+              Sprint
+            </h2>
+            <p>
+              <img src="i/scrum1.png" alt="Le sprint" />
+            </p>
+            <aside class="notes">
+              Durée fixée qui ne bouge pas.
+            </aside>
+          </section>
+          <section data-background="#330033">
+            <h2>
+              Daily Scrum
+            </h2>
+            <p>
+              <img src="i/scrum2.png" alt="Le daily scrum meeting" />
+            </p>
+          </section>
+          <section data-background="#330033">
+            <h2>
+              Product Backlog
+            </h2>
+            <p>
+              <img src="i/scrum3.png" alt="Le backlog" />
+            </p>
+          </section>
+          <section data-background="#330033">
+            <h2>
+              Sprint Planning
+            </h2>
+            <p>
+              <img src="i/scrum4.png" alt="Le sprint backlog" />
+            </p>
+            <p>
+              Découpage en tâches
+            </p>
+          </section>
+          <section data-background="#330033">
+            <h2>
+              Sprint Review
+            </h2>
+            <p>
+              <img src="i/scrum5.png" alt="Le sprint review" />
+            </p>
+            <p>
+              C'est la démonstration, mais pas que
+            </p>
+            <aside class="notes">
+              Collaboration pour définir les orientations du prochain sprint. Revue du backlog, du budget, de la vision.
+            </aside>
+          </section>
+          <section data-background="#330033">
+            <h2>
+              Rétrospective
+            </h2>
+            <p>
+              <img src="i/scrum6.png" alt="La rétrospective" />
+            </p>
+          </section>
+          <section data-background="#330033">
+            <h2>
+              Les Rôles
+            </h2>
+            <p>
+              <img src="i/scrum7.png" alt="Les 3 rôles" />
+            </p>
+            <aside class="notes">
+              PO (champion de la valeur) s'assure que le produit fabriqué a de la valeur.<br>
+              SM (facilitateur) aide l'équipe à rester concentrée et à suivre le processus défini.<br>
+              L'équipe (producteur) est responsable de livrer régulièrement un produit de qualité.<br>
+              Equipe est auto-organisée, il n'y a pas de chef de projet.<br>
+              Equipe est un tout, pas de sous-équipe, toute l'équipe est responsable du travail.
+            </aside>
+          </section>
+          <section data-background="#330033">
+            <h2>
+              En résumé
+            </h2>
+            <p>
+              Une méthode simple<br>
+              Facile à comprendre<br>
+              Difficile à maitriser
+            </p>
+            <aside class="notes">
+              Scrum impose de tout appliquer, sinon ce n'est pas Scrum.<br>
+              C'est un framework qui vous aide à mettre en évidence l'efficacité de vos pratiques.
+            </aside>
+          </section>
+        </section>
+        <section id="kanban">
+          <section data-background="i/toyotamotorplant1950.jpg">
+            <h1>
+              Kanban
+            </h1>
+            <p>
+              La carte qui vient du Japon
+            </p>
+          </section>
+          <section data-background="#666633">
+            <h2>
+              Origine
+            </h2>
+            <p>
+              A la fin des années 40, Toyota expérimente la production en flux tendu. Cela consiste à limiter la
+              production d'un poste amont au juste besoin du poste aval.
+            </p>
+            <p>
+              A partir de 2005, une application du système Kanban aux métiers du savoir est développée sous l'impulsion
+              de David Anderson.
+            </p>
+            <aside class="notes">
+              C'est Taiichi Ohno qui est le père du TPS.
+            </aside>
+          </section>
+          <section data-background="#666633">
+            <h2>
+              Quel mot bizarre !
+            </h2>
+            <p><img src="i/kanbandef.jpg" alt="kanban card" />
+            </p>
+            <p>
+              En japonais, KANBAN signifie "signal visuel" ou "étiquette".
+            </p>
+            <p>
+              On utilise un K majuscule pour la méthode uniquement.
+            </p>
+            <aside class="notes">
+              Kanban est inspiré du système des supermarchés américains.
+            </aside>
+          </section>
+          <section data-background="#666633">
+            <h2>
+              4 principes
+            </h2>
+            <ol>
+              <li>Démarrez avec votre processus existant</li>
+              <li>Engagez-vous à l'améliorer progressivement</li>
+              <li>Respectez le processus, les rôles, les responsabilités</li>
+              <li>Encouragez le leadership à tous les niveaux</li>
+            </ol>
+          </section>
+          <section data-background="#666633">
+            <h2>
+              6 pratiques clés
+            </h2>
+            <ol>
+              <li>Visualiser</li>
+              <li>Limiter le WIP</li>
+              <li>Gérer le flux</li>
+              <li>Expliciter les règles</li>
+              <li>Implémenter des boucles de feedback</li>
+              <li>S'améliorer par la collaboration</li>
+            </ol>
+          </section>
+          <section data-background="#666633">
+            <h2>
+              Visualiser
+            </h2>
+            <p>
+              <img src="i/kanban1.png" alt="Visualiser" />
+            </p>
+            <p>
+              Pour réduire les obstacles et augmenter la collaboration.
+            </p>
+          </section>
+          <section data-background="#666633">
+            <h2>
+              Limiter le travail en cours
+            </h2>
+            <p>
+              <img src="i/kanban2.png" alt="Limiter" />
+            </p>
+            <p>
+              Avec des limites hautes et basses.
+            </p>
+            <p>
+              Pour augmenter le débit et ne plus re-prioriser.
+            </p>
+          </section>
+          <section data-background="#666633">
+            <h2>
+              Gérer le flux
+            </h2>
+            <p>
+              <img src="i/kanban3.png" alt="Gérer le flux" />
+            </p>
+            <p>
+              Mesurer pour améliorer et prévoir.
+            </p>
+          </section>
+          <section data-background="#666633">
+            <h2>
+              A vous de jouer !
+            </h2>
+            <p>
+              Les 7 erreurs
+            </p>
+          </section>
+          <section data-background="#666633">
+            <h2>Expliciter les règles du processus</h2>
+            <ul>
+              <li>Règles d'escalade</li>
+              <li>Règles de changement des priorités</li>
+              <li>Règles de purge</li>
+            </ul>
+            <p>
+              Les règles sont affichées et respectées.
+            </p>
+          </section>
+          <section data-background="#666633">
+            <h2>
+              Implémenter des boucles de feedback
+            </h2>
+            <p><img src="i/pdca.png"></p>
+          </section>
+          <section data-background="#666633">
+            <h2>
+              La roue de Deming : PDCA
+            </h2>
+              <ul style="list-style-type: none">
+                <li><b>Plan.</b> Identifier une opportunité et plannifier le changement.</li>
+                <li><b>Do.</b> Tester le changement, à petite échelle si nécessaire.</li>
+                <li><b>Check.</b> Analyser les résultats, acquérir de l'expérience.</li>
+                <li><b>Act.</b> Si l'expérience est réussie, modifier les règles pour entériner le changement</li>
+              </ul>
+          </section>
+          <section data-background="#666633">
+            <h2>
+              S'améliorer par la collaboration et l'expérimentation
+            </h2>
+            <p>
+              Un essai qui se transforme en échec n'en est pas un si l'ensemble de l'équipe en a appris quelque chose.
+            </p>
+            <p>
+              Votre culture valorise : la tolérance à l'échec, l'expérimentation scientifique, l'esprit d'initiative,
+              la responsabilité collective.
+            </p>
+          </section>
+          <section data-background="#666633">
+            <h2>
+              En résumé
+            </h2>
+            <p>
+              Une méthode à mettre en place progressivement,<br>
+              bien adaptée aux travaux où la planification<br>moyen et long terme est impossible.
+            </p>
+            <p>
+              Le risque est d'oublier l'amélioration.<br>
+              Un conseil : travaillez vos obstacles.
+            </p>
+          </section>
+        </section>
+        <section id="roti">
+          <section data-background="#46656A">
+            <h1>
+              Une dernière pratique
+            </h1>
+            <p>
+              Le ROTI
+            </p>
+          </section>
+          <section data-background="#46656A">
+            <h2>
+              Return On Time Invested
+            </h2>
+            <p>POULET en français, selon la définition de Pablo Pernot:</p>
+            <p>Performance Octroyée selon l'Utilité et la Légitimité du sujet En relation avec le Temps passé</p>
+          </section>
+          <section data-background="#46656A">
+            <h2>
+              Return On Time Invested
+            </h2>
+            <ul>
+              <li style="background-image: url('i/rotione.png');">Totalement inutile, j'ai perdu mon temps</li>
+              <li style="background-image: url('i/rotitwo.png');">Négatif, trop de temps par rapport à la valeur reçue</li>
+              <li style="background-image: url('i/rotithree.png');">Moyen, équilibre entre gain et temps passé</li>
+              <li style="background-image: url('i/rotifour.png');">Positif, gain supérieur au temps passé</li>
+              <li style="background-image: url('i/rotifive.png');">Réellement utile, vaut largement le temps passé</li>
+            </ul>
+          </section>
+        </section>
+        <section id="end">
+          <h1>The End</h1>
+          <p style="font-size: smaller ;text-align: left;">
+            - Cette présentation utilise <a href="https://github.com/hakimel/reveal.js">reveal.js</a> de Hakim El Hattab<br>
+            - <a href="https://en.wikipedia.org/wiki/Snowbird,_Utah#/media/File:Snowbird_Gondola_photo_D_Ramey_Logan.jpg">Snowbird Tram</a> photo de D. Ramey Logan<br>
+            - <a href="http://agilemanifesto.org/">Fond du manifeste agile</a> photo de Ward Cunningham<br>
+            - Photo de tableau agile empruntée au site <a href="http://theagilepirate.net/">The Agile Pirate</a><br>
+            </p>
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        slideNumber: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          // { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          // { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
