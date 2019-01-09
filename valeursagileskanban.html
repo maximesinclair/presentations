@@ -213,15 +213,30 @@
             <aside class="notes">
               Taylor est un ouvrier qui monte les échelons et développe ses travaux au sein d'une aciérie.<br>
               Décomposition en tâches, optimisation des gestes et adaptation des outils.<br>
-              C'est l'arrivée des bureaux qualité et méthodes.
+              C'est l'arrivée des bureaux qualité et méthodes.<br>
+              Les syndicats font obstacle car l'OS n'a plus d'expertise.<br>
+              Taylor meurt en 1915 sans connaitre le succès.
+            </aside>
+          </section>
+          <section data-background="i/fordtnoire.jpg">
+            <h2>Ford et le travail à la chaîne</h2>
+            <p>&nbsp;</p>
+            <div class="fragment lightcontrast">
+              <p  style="text-align:left">
+                &ldquo;Un client peut choisir n’importe quelle couleur pour sa Ford&nbsp;T,
+                du moment que c’est noir.&rdquo;
+              </p>
+              <p style="text-align:right">&mdash; Henry Ford</p>
+            </div>
+            <aside class="notes">
+              Ford l'applique en y ajoutant le travail à la chaine lors de la 1ere guerre mondiale.<br>
+              C'est la production de masse et le règne des économies d'échelle.
             </aside>
           </section>
           <section>
             <h2>Organisation Scientifique du Travail</h2>
             <p><img src="i/tempsmodernes.jpg"></p>
             <aside class="notes">
-              Les syndicats font obstacle car l'OS n'a plus d'expertise.<br>
-              Ford l'applique en y ajoutant le travail à la chaine lors de la 1ere guerre mondiale.<br>
               En un siècle, la productivité du travailleur manuel est multiplié par 50.<br>
               Cela a permis d'augmenter le salaire des ouvriers et donc la richesse globale.
             </aside>
@@ -232,7 +247,6 @@
             <ul>
               <li>consiste en des traitements batchs</li>
               <li>automatise des processus répétitifs</li>
-              <li>est essentiellement codé en assembleur</li>
               <li>économise les bits et les cycles CPU</li>
             </ul>
             <p><img src="i/carteperfo.png"></p>
@@ -261,38 +275,6 @@
               </ul>
             </aside>
           </section>
-          <!--<section>
-            <h2>La crise encore</h2>
-            <p>Dans les années 90, rien n'a changé (enfin presque)</p>
-            <ul>
-              <li>La micro-informatique est dans les entreprises</li>
-              <li>Les outils d'industrialisation du développement se sont développés
-              <ul>
-                <li>Les langages COBOL, C, Smalltalk, C++, ADA et bientôt Java</li>
-                <li>Les Ateliers de Génie Logiciel, les éditeurs, débogueurs, le makefile</li>
-                <li>Les outils de gestion de versions, des exigences, des tests</li>
-              </ul></li>
-              <li>Et les méthodes aussi
-                <ul>
-                  <li>SADT, Cap Gemini SDM, SSADM, DoD-Std-2167</li>
-                  <li>MERISE en France</li>
-                </ul>
-              </li>
-            </ul>
-            <aside class="notes">
-              Dans le fond, les outils et les process ont bien progressé mais le dev logiciel est toujours difficile.
-              <ul>
-                <li>L'interface graphique Macintosh 1984, Windows, OS/2 (fenêtres,souris) s'impose</li>
-                <li>Le réseau de télécommunication pointe son nez</li>
-                <li>Smalltalk, C++ languages objets</li>
-                <li>ADA appel d'offre du DoD en 1977, conçu comme un langage universel, fiable et sûr</li>
-                <li>Qui dit AGL, dit L4G (CASE en english), AD/Cycle d'IBM</li>
-                <li>SADT pour Structured Analysis and Design Technique, SDM pour System Development Methodology</li>
-                <li>SSADM pour Structured systems analysis and design method créé au UK</li>
-                <li>DoD-Std-2167 est un standard de développement logiciel du DOD qui impose une méthode en cascade</li>
-              </ul>
-            </aside>
-          </section>-->
           <section id="chaosreport">
             <h2>La crise encore</h2>
             <p>Le Standish Group publie en 1995 le premier Chaos Report</p>
@@ -442,7 +424,7 @@
             </p>
             <p class="manifest">
               <strong>Les individus et leurs interactions</strong> plus que <small>les processus et les outils</small><br>
-              <strong>Une solution opérationnelle</strong> plus qu'<small>une documentation exhaustive</small><br>
+              <strong>Une <span style="color: lightgreen">solution opérationnelle</span></strong> plus qu'<small>une documentation exhaustive</small><br>
               <strong>La collaboration avec les clients</strong> plus que <small>la négociation contractuelle</small><br>
               <strong>L’adaptation au changement</strong> plus que <small>le suivi d'un plan</small><br>
               <br>
@@ -512,7 +494,7 @@
               <li>au delà de Neuf, c'est compliqué d'avoir une seule conversation à table.</li>
             </ul>
           </section>
-          <section data-background="#61380B">
+          <section id="teamsize" data-background="#61380B">
             <h2>La bonne taille d'équipe</h2>
             <p><img src="i/groupsatisfaction.jpg"></p>
             <aside class="notes">
@@ -573,7 +555,7 @@
             <p style="text-align: left; padding-left: 15%; transform: rotate(4deg);"><br>Tests automatiques</p>
             <p style="transform: rotate(-7deg);">Intégration continue</p>
             <p style="text-align: right; padding-right: 20%; transform: rotate(-5deg);">Code propre</p>
-            <p style="transform: rotate(3deg);">Correction des bugs au plus tôt</p>
+            <p style="transform: rotate(3deg);">Correction des anomalies au plus tôt</p>
             <aside class="notes">
               Principe du "No broken window"
             </aside>
@@ -696,7 +678,7 @@
           <section data-background="#0B3B0B">
             <h2>Déploiement continu</h2>
             <p>
-              Chaque livraison d'un incrément du logiciel fait l'objet<br>
+              Chaque livraison d'un incrément de la solution fait l'objet<br>
               d'une démonstration organisée avec le client,<br>
               le sponsor, les key-users puis est mise en production.
             </p>
@@ -705,7 +687,7 @@
               recueillir du feedback régulièrement.
             </p>
             <aside class="notes">
-              Problème d'installation, bugs de production, pb de performance apparaisse au plus tôt.
+              Problème d'installation, ano de production, pb de performance apparaisse au plus tôt.
             </aside>
           </section>
         </section>
@@ -770,7 +752,7 @@
             <h2>Amélioration Continue</h2>
             <p><img src="i/pdca.png"></p>
             <aside class="notes">
-              Roue de Demming<br>
+              Roue de Deming<br>
               Amélioration sur les pratiques, les techniques<br>
               Importance de la mesure, les KPI, pour les décisions
             </aside>
@@ -833,9 +815,8 @@
             <h2>Exercice</h2>
             <p>Les 12 principes du manifeste.</p>
             <ul>
-              <li>Pour un groupe, placement des principes sur la carte des valeurs.</li>
-              <li>Pour un autre, regroupement des principes par bénéficiaire.</li>
-              <li>Pour un dernier, rédaction des anti-principes.</li>
+              <li>Pour un groupe, regroupement des principes par destinataire&nbsp;: client, équipe ou management.</li>
+              <li>Pour un autre, rédaction des anti-principes.</li>
             </ul>
           </section>
         </section>
@@ -863,10 +844,10 @@
             <h2>Radiateur d'Information</h2>
           </section>
           <section id="daily">
-            <h2>Daily Scrum</h2>
+            <h2>Daily Meeting</h2>
             <p class="def">
               Réunion quotidienne d'un quart d'heure, debout.<br>
-              Qu’as tu fait depuis le dernier scrum ? Qu’est ce que tu dois faire ?
+              Qu’as tu fait depuis le dernier daily ? Qu’est ce que tu dois faire ?
               Qu’est ce qui t’empêche de faire ton travail ?
             </p>
             <ul class="goal">
@@ -875,7 +856,7 @@
               <li>contribue à la cohésion de l'équipe</li>
             </ul>
             <aside class="notes">
-              Aussi nommé Standup Meeting, Daily Meeting
+              Aussi nommé Standup Meeting, Scrum Meeting
             </aside>
           </section>
           <section id="backlog">
@@ -909,7 +890,7 @@
           <section id="userstory">
             <h2>User Story</h2>
             <p class="def">
-              Histoire utilisateur représentant un incrément du logiciel.<br>
+              Histoire utilisateur représentant un incrément du système.<br>
               Son expression doit pouvoir tenir sur un post'it.
             </p>
             <ul class="goal">
@@ -924,12 +905,12 @@
           <section id="planningpoker">
             <h2>Planning Poker</h2>
             <p class="def">
-              Estimation collective et relative des user stories.<br>
+              Estimation collective et relative des tâches.<br>
               L'estimation est faite en points de complexité ou en taille de T-shirt.<br>
               Tout le monde dévoile son estimation au même moment.
             </p>
             <ul class="goal">
-              <li>vérifier la faisabilité d'une user story</li>
+              <li>vérifier la faisabilité d'une tâche</li>
               <li>concevoir une solution</li>
               <li>estimer pour prioriser</li>
             </ul>
@@ -937,7 +918,7 @@
           <section id="defofdone">
             <h2>Definition of Done</h2>
             <p class="def">
-              Définition formelle des critères permettant de dire qu'une story est terminée.
+              Définition formelle des critères permettant de dire qu'une tâche est terminée.
             </p>
             <ul class="goal">
               <li>éviter la question : "c'est fini-fini&nbsp;?"</li>
@@ -945,7 +926,7 @@
               <li>définition claire de ce qui va être comptabilisé</li>
             </ul>
             <aside class="notes">
-              Exemple de liste de critères: codé, testé unitairement, code revu, documentation mise à jour, cas de test passé.
+              Exemple de liste de critères: développé, test passé, revu par un tiers, documentation mise à jour, article publié.
             </aside>
           </section>
           <section id="retro">
@@ -979,95 +960,6 @@
         </section>
         <section id="pause">
           <h1>Pause</h1>
-        </section>
-        <section id="challenge">
-          <section>
-            <h1>Surprise</h1>
-            <p><small>Celui qui ne peut plus éprouver ni étonnement ni surprise<br>est pour ainsi dire mort</small></p>
-            <aside class="notes">
-              Citation d'Albert Einstein
-            </aside>
-          </section>
-          <section>
-            <h2>Marshmallow Challenge</h2>
-            <p style="text-align: left;">
-              Instructions
-            </p>
-            <ul>
-              <li>4 à 6 personnes par table</li>
-              <li>20 spaghettis + 1 mètre de scotch + 1 mètre de fil + 1&nbsp;guimauve</li>
-              <li><a href="http://e.ggtimer.com/18minutes">18 minutes</a></li>
-              <li>Construire la plus haute structure autoportante (ni tenue ni suspendue) pour porter la guimauve</li>
-              <li>On mesure la hauteur entre la base et la guimauve entière</li>
-              <li>Vous pouvez utiliser tout le kit ou seulement une partie</li>
-              <li>Vous pouvez couper les spaghettis, le scotch, le fil mais pas la guimauve</li>
-            </ul>
-            <aside class="notes">
-              <p>
-              ATTENTION : Au moins 4 personnes par groupe prédéfini.
-
-              Répéter 3 fois les règles.
-              Nous mesurons la structure du dessus de la table au dessus du chamallow, l’équipe gagnante est celle qui a la structure autoportée la plus haute en mesurant cette distance.
-              Le chamallow entier doit être sur le dessus de la structure.
-              Utilisez tout ou partie du kit, comme vous le souhaitez !
-              Vous pouvez couper et assembler comme vous le souhaitez les spaghettis, la ficelle et le scotch.
-              Le challenge dure 18 minutes précises. Nous allons afficher un décompte du temps.
-              Est-ce que tout le monde a compris ?
-
-              Pendant le challenge : circuler, rappel du temps restant, chauffer la salle en disant ce qui se passe ici ou là, rappeler que la structure doit tenir toute seule !
-              </p>
-            </aside>
-          </section>
-          <section>
-            <h2>Résultats</h2>
-            <aside class="notes">
-              Le résultat moyen est de 50 cm <br>
-              Ovation pour les gagnants
-            </aside>
-          </section>
-          <section>
-            <h2>Qu'a-t-on appris ?</h2>
-            <ul class="fragment">
-              <li>Le travail en équipe ?</li>
-              <li>A respecter le timeboxing ?</li>
-              <li>La définition du fini ?</li>
-              <li>A prototyper ?</li>
-              <li>A identifier les préjugés cachés ?</li>
-            </ul>
-            <aside class="notes">
-              <ul>
-                <li>Relecture (les faits)</li>
-                <ul>
-                  <li>Comment avez-vous démarré ? Quelles étaient les étapes ?</li>
-                  <li>Quel rôle avez-vous joué ?</li>
-                </ul>
-                <li>Enseignements</li>
-                <ul>
-                  <li>Qu'avez-vous appris ?</li>
-                  <li>De quoi avez-vous pris conscience ?</li>
-                  <li>Qu'est-ce qui a été déterminant ?</li>
-                </ul>
-                <li>Liens avec votre contexte</li>
-                <ul>
-                  <li>Quelles analogies pouvez-vous faire avec votre job ?</li>
-                  <li>Avez-vous une impression de déjà-vu ?</li>
-                </ul>
-                <li>Eclairage</li>
-                <ul>
-                  <li>Valeur du prototypage ? Identification des préjugés cachés ?</li>
-                  <li>Pour innover, il faut essayer.</li>
-                </ul>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <p>
-              <img src="i/marshmallowwinners.jpg" alt="Les vainqueurs" />
-            </p>
-            <aside class="notes">
-              Les enfants de sortie de maternelle obtiennent les meilleurs résultats
-            </aside>
-          </section>
         </section>
         <section id="scrum">
           <section data-background="#330033">
@@ -1186,6 +1078,60 @@
               Scrum impose de tout appliquer, sinon ce n'est pas Scrum.<br>
               C'est un framework qui vous aide à mettre en évidence l'efficacité de vos pratiques.
             </aside>
+          </section>
+        </section>
+        <section id="pizzagame">
+          <section data-background="i/toyotamotorplant1950.jpg">
+            <h1>
+              Ouvrons notre pizzeria
+            </h1>
+            <p>
+              Vous reprendrez bien une petite part&nbsp;?
+            </p>
+          </section>
+          <section data-background="#F0E68C">
+            <h2>
+              Vérification des pré-requis
+            </h2>
+            <p>
+              2 groupes et pour chacun&nbsp;:
+            </p>
+            <ul>
+              <li>des post'it jaunes, roses et verts</li>
+              <li>des feuilles A4</li>
+              <li>de la colle</li>
+              <li>une paire de ciseaux</li>
+              <li>un marqueur rouge</li>
+              <li>un four et son minuteur</li>
+              <li>et des commandes</li>
+            </ul>
+          </section>
+          <section data-background="#F0E68C">
+            <h2>
+              Comptons les points
+            </h2>
+            <ul>
+              <li>Une part de pizza livrée : 10 points</li>
+              <li>des feuilles A4</li>
+              <li>de la colle</li>
+            </ul>
+          </section>
+          <section data-background="#F0E68C">
+            <h2>
+              6 pratiques Kanban
+            </h2>
+            <ol>
+              <li>Visualiser le flux<br>
+                <span style="font-size: smaller">Quel était votre processus de travail ?</span>
+              </li>
+              <li>Limiter le WIP</li>
+              <li>Gérer le flux<br>
+                <span style="font-size: smaller">Mesurer à l'aide du système de point.</span>
+              </li>
+              <li>Expliciter les règles</li>
+              <li>Implémenter des boucles de feedback</li>
+              <li>S'améliorer par la collaboration</li>
+            </ol>
           </section>
         </section>
         <section id="kanban">
@@ -1330,6 +1276,18 @@
           </section>
           <section data-background="#666633">
             <h2>
+              Pas à pas de la mise en place ???
+            </h2>
+            <p>
+              Courbe des flux cumulés CDDB, classes de service, type de carte, limites basses et hautes, buffer.
+            </p>
+            <p>
+              Votre culture valorise : la tolérance à l'échec, l'expérimentation scientifique, l'esprit d'initiative,
+              la responsabilité collective.
+            </p>
+          </section>
+          <section data-background="#666633">
+            <h2>
               En résumé
             </h2>
             <p>
@@ -1368,7 +1326,7 @@
             </h2>
           </section>
           <section data-background="#FFF">
-            <h3>Le sprint de 3 semaines a commencé vendredi, avec une équipe de 10 personnes. 
+            <h3>Le sprint de 3 semaines a commencé vendredi, avec une équipe de 10 personnes.
             Le lundi lors du scrum du matin, on apprend qu’un développeur s’est cassé le bras droit au ski, il est plâtré pour une semaine.
             </h3>
             <ol>
