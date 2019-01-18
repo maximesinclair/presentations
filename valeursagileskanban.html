@@ -1098,13 +1098,33 @@
             </p>
             <ul>
               <li>des post'it jaunes, roses et verts</li>
-              <li>des feuilles A4</li>
+              <li>des feuilles blanches A4</li>
               <li>de la colle</li>
-              <li>une paire de ciseaux</li>
+              <li>deux paires de ciseaux</li>
               <li>un marqueur rouge</li>
               <li>un four et son minuteur</li>
-              <li>et des commandes</li>
             </ul>
+          </section>
+          <section id="pizzahawai" data-background="#F0E68C">
+            <h2>
+              Pizza Hawaïenne
+            </h2>
+            <p>
+              Sur une part couverte de sauce tomate, ajouter&nbsp;:
+            </p>
+            <ul>
+              <li>3 morceaux de jambon</li>
+              <li>3 morceaux d'ananas</li>
+            </ul>
+            <p><img src="i/notfound.jpg" alt="Une part d'Hawaïenne"/></p>
+          </section>
+          <section id="cadence1" data-background="#F0E68C">
+            <h2>
+              Kanban démarre où on en est
+            </h2>
+            <p>Produisez autant de pizzas que possible</p>
+            <p>Evitez au mieux le gaspillage</p>
+            <p>Continuez jusqu’à ce que je vous arrête</p>
           </section>
           <section data-background="#F0E68C">
             <h2>
@@ -1112,8 +1132,8 @@
             </h2>
             <ul>
               <li>Une part de pizza livrée : 10 points</li>
-              <li>des feuilles A4</li>
-              <li>de la colle</li>
+              <li>Un ingrédient non utilisé : -1 point</li>
+              <li>Une base de pizza <small>(avec ou sans sauce)</small> non terminée : -4</li>
             </ul>
           </section>
           <section data-background="#F0E68C">
@@ -1122,16 +1142,38 @@
             </h2>
             <ol>
               <li>Visualiser le flux<br>
-                <span style="font-size: smaller">Quel était votre processus de travail ?</span>
+                <span style="font-size: smaller">Quel était votre processus de travail ? Qu'elles étaient les étapes ?</span>
               </li>
-              <li>Limiter le WIP</li>
+              <li>Limiter le travail en cours (WIP)<br>
+                <span style="font-size: smaller">Y avait-il des endroits où le travail s’est empilé ?</span>
+              </li>
               <li>Gérer le flux<br>
-                <span style="font-size: smaller">Mesurer à l'aide du système de point.</span>
+                <span style="font-size: smaller">Mesurez à l'aide du système de points.</span>
               </li>
-              <li>Expliciter les règles</li>
-              <li>Implémenter des boucles de feedback</li>
-              <li>S'améliorer par la collaboration</li>
             </ol>
+          </section>
+          <section data-background="#F0E68C">
+            <h2>
+              6 pratiques Kanban
+            </h2>
+            <ol start="4">
+              <li>Expliciter les règles<br>
+                <span style="font-size: smaller">Permettez aux personnes de faire les bonnes choses correctement.</span>
+              </li>
+              <li>Implémenter des boucles de feedback<br>
+                <span style="font-size: smaller">Est-ce que vous revoyez régulièrement votre travail et votre processus&nbsp;?
+                Effectuez des rétrospectives, des daily meetings… </span>
+              </li>  
+              <li>S'améliorer par la collaboration<br>
+                <span style="font-size: smaller">Utilisez la méthode scientifique pour vous améliorer en continue.<br>Sans mesure, pas de performance !</span>
+              </li>
+            </ol>
+          </section>
+          <section data-background="#F0E68C">
+            <h2>
+              Suite du jeu
+            </h2>
+            <p>première étape: la foto de la table</p>
           </section>
         </section>
         <section id="kanban">
@@ -1201,6 +1243,67 @@
           </section>
           <section data-background="#666633">
             <h2>
+              Mise en place pas à pas
+            </h2>
+            <p>
+              Courbe des flux cumulés CDDB, classes de service, type de carte, limites basses et hautes, buffer.
+            </p>
+            <p>
+              Définition des types de travaux, Inbox et Outbox (le système), Visualisation du processus
+              Les limites hautes (2xnbre pers -1) et basses (pour le goulet d'étranglement), limite par nbre d'avatars
+              Les règles aux interfaces, escalade
+              Daily meeting, Cadence, Mesure, Rétrospective
+
+            </p>
+          </section>
+          <section data-background="#666633">
+            <h2>
+              Visualiser
+            </h2>
+            <h3>les éléments de travail</h3>
+            <p>
+              Définir les types de cartes. Une bonne granularité doit permettre
+              de sortir 5 à 10 cartes par semaine.
+            </p>
+            <p>
+              Chaque carte contient au moins les informations suivantes&nbsp;:
+              <ul>
+                <li>Résumé de la tache</li>
+                <li>Date d'entrée</li>
+                <li>Date de sortie</li>
+              </ul>
+            </p>
+            <p>
+               Est-ce que tout le travail est représenté&nbsp;?
+            </p>
+            <aside class="notes">
+              La catégorisation peut aussi passer par la taille, l'urgence, ...<br>
+              L'important est d'avoir des éléments homogènes par type<br>
+              Sur la carte on peut aussi faire figurer la priorité, les dépendances, le consommé.
+            </aside>
+          </section>
+          <section data-background="#666633">
+            <h2>
+              Visualiser
+            </h2>
+            <h3>le flux de travail</h3>
+            <p>
+              Représenter notre processus sur un tableau.
+            </p>
+            <p>
+              Le système est défini par son <i>Inbox</i> et son <i>Outbox</i>. Il 
+              représente le processus dont l'équipe est propriétaire.
+            </p>
+            <p>
+              Entre chaque activité, il peut y avoir une file d'attente. 
+            </p>
+            <aside class="notes">
+              Inbox ou Backlog, c'est un buffer en entrée<br>
+              L'objectif est de réduire ces files d'attente
+            </aside>
+          </section>
+          <section data-background="#666633">
+            <h2>
               Visualiser
             </h2>
             <p>
@@ -1212,17 +1315,60 @@
           </section>
           <section data-background="#666633">
             <h2>
+              Visualiser
+            </h2>
+            <h3>les indicateurs</h3>
+            <p>Avatar ou nom des équipiers</p>
+            <p>Blocage externe</p>
+            <p>Anomalie interne</p>
+            <p>Le truc urgent !</p>
+            <aside class="notes">
+              .
+            </aside>
+          </section>
+          <section data-background="#666633">
+            <h2>
               Limiter le travail en cours
             </h2>
             <p>
               <img src="i/kanban2.png" alt="Limiter" />
             </p>
             <p>
-              Avec des limites hautes et basses.
+              Avec des limites hautes<br>mais aussi basses en amont des goulets 
+              d'étranglement.
             </p>
             <p>
-              Pour augmenter le débit et ne plus re-prioriser.
+              Commencer par une limite haute de 2 x nbre pers - 1 
             </p>
+            <aside class="notes">
+              Pour augmenter le débit et ne plus re-prioriser.
+            </aside>
+          </section>
+          <section data-background="#666633">
+            <h2>
+              Un BON management visuel
+            </h2>
+            <p>
+              répond aux questions suivantes&nbsp;:
+            </p>
+            <ul>
+              <li>Quel est le travail qui est fait ici ?</li>
+              <li>Comment le travail doit-il être fait ?</li>
+              <ul>
+                <li>Quel est le processus ?</li>
+                <li>Qu'est-ce qui est normal/attendu ?</li>
+              </ul>
+              <li>Comment les problèmes sont-ils remontés ?</li>
+              <ul>
+                <li>Qu'est-ce qui n'est PAS normal/attendu ?</li>
+                <li>Qu'est-ce qui empêche notre travail d'être fluide ?</li>
+              </ul>
+              <li>Comment chacun sait ce qu'il a à faire ?</li>
+              <li>Est-ce que les objectifs sont atteints ?</li>
+            </ul>
+            <aside class="notes">
+              Hakan Forss
+            </aside>
           </section>
           <section data-background="#666633">
             <h2>
@@ -1236,9 +1382,38 @@
             </p>
           </section>
           <section data-background="#666633">
+            <h2>
+              Mesurer le temps de traversée
+            </h2>
+            <p>
+              <img src="i/kanban3.png" alt="Gérer le flux" />
+            </p>
+            <p>
+              Carte de contrôle.
+            </p>
+            <aside class="notes">
+              .
+            </aside>
+          </section>
+          <section data-background="#666633">
+            <h2>
+              Mesurer le débit
+            </h2>
+            <p>
+              <img src="i/kanban3.png" alt="Débit" />
+            </p>
+            <p>
+              Mesure du débit sur une cadence et sur l'ensemble
+            </p>
+            <aside class="notes">
+              Pour augmenter le débit, 2 possibilités : réduire le temps de 
+              traversée ou augmenter le nombre d'éléments dans le système.
+            </aside>
+          </section>
+          <section data-background="#666633">
             <h2>Expliciter les règles du processus</h2>
             <ul>
-              <li>Définition du fini</li>
+              <li>Règles de sélection d'un item</li>
               <li>Règles aux interfaces</li>
               <li>Règles d'escalade</li>
               <li>Règles de changement des priorités</li>
@@ -1247,20 +1422,68 @@
             <p>
               Les règles sont affichées et respectées.
             </p>
+            <aside class="notes">
+              Sélection d'un nouvel item = Priorisation 
+            </aside>
+          </section>
+          <section data-background="#666633">
+            <h2>Mise sous tension</h2>
+            <h3>C'est parti pour le daily meeting !</h3>
+            <p>L'équipe parcourt le tableau de droite à gauche.</p>
+            <ul>
+              <li>Le tableau est-il à jour ?</li>
+              <li>Qu'est-ce qu'il est important de faire aujourd'hui ?</li>
+              <li>A-t-on des blocages ?</li>
+              <li>Sont-ils visibles ?</li>
+              <li>Comment les gérer ?</li>
+            </ul>
+            <aside class="notes">
+              "Mise sous tension" car c'est le but de Kanban de générer des blocages 
+            </aside>
           </section>
           <section data-background="#666633">
             <h2>
               Implémenter des boucles de feedback
             </h2>
-            <p>
-              Souvenez-vous de la roue de Deming : PDCA
-            </p>
-              <ul style="list-style-type: none">
-                <li><b>Plan.</b> Identifier une opportunité et plannifier le changement.</li>
-                <li><b>Do.</b> Tester le changement, à petite échelle si nécessaire.</li>
-                <li><b>Check.</b> Analyser les résultats, acquérir de l'expérience.</li>
-                <li><b>Act.</b> Si l'expérience est réussie, modifier les règles pour entériner le changement</li>
-              </ul>
+            <h3>
+              Rétrospective
+            </h3>
+            <p>Une heure par semaine en équipe pour répondre aux questions
+             suivantes en nous aidant de nos mesures&nbsp;:</p>
+            <ul style="list-style-type: square">
+              <li>Est-ce que notre tableau est représentatif de notre travail&nbsp;?</li>
+              <li>Est-ce qu'on suit le travail au bon niveau de granularité ?</li>
+              <li>Peut-on identifier des freins à notre flux de travail ?</li>
+              <li>Doit-on adapter certaines limites, créer ou supprimer des files d'attente&nbsp;?</li>
+            </ul>
+          </section>
+          <section data-background="#666633">
+            <h2>
+              Implémenter des boucles de feedback
+            </h2>
+            <h3>
+              Rétrospective
+            </h3>
+            <ul style="list-style-type: square">
+              <li>Comment améliorer la qualité de notre travail&nbsp;?</li>
+              <li>Quel est l'avis de nos clients sur le résultat produit ?</li>
+              <li>Notre rythme a-t-il été soutenable ?</li>
+              <li>Comment augmenter notre performance&nbsp;?</li>
+            </ul>
+          </section>
+          <section data-background="#666633">
+            <h2>
+              S'améliorer par la collaboration et l'expérimentation
+            </h2>
+            <h3>
+              Roue de Deming : PDCA
+            </h3>
+            <ul style="list-style-type: none">
+              <li><b>Plan.</b> Identifier une opportunité et plannifier le changement.</li>
+              <li><b>Do.</b> Tester le changement, à petite échelle si nécessaire.</li>
+              <li><b>Check.</b> Analyser les résultats, acquérir de l'expérience.</li>
+              <li><b>Act.</b> Si l'expérience est réussie, modifier les règles pour entériner le changement</li>
+            </ul>
           </section>
           <section data-background="#666633">
             <h2>
@@ -1276,15 +1499,72 @@
           </section>
           <section data-background="#666633">
             <h2>
-              Pas à pas de la mise en place ???
+              Quelques outils qui peuvent aider
             </h2>
-            <p>
-              Courbe des flux cumulés CDDB, classes de service, type de carte, limites basses et hautes, buffer.
-            </p>
-            <p>
-              Votre culture valorise : la tolérance à l'échec, l'expérimentation scientifique, l'esprit d'initiative,
-              la responsabilité collective.
-            </p>
+            <ul style="list-style-type: square">
+              <li>Prioriser avec la matrice d'Eiseinhower ou le CoD</li>
+              <li>Suivre notre flux avec le CFD</li>
+              <li>Eliminer les problèmes avec les 5 pourquoi</li>
+              <li>Augmenter notre performance en évitant la surcharge</li>
+            </ul>
+          </section>
+          <section data-background="#666633">
+            <h2>
+              La matrice d'Eisenhower 
+            </h2>
+            <p><img src="i/eisenhower_matrix.png" alt="Les 4 quadrants"/></p>
+            <aside class="notes">
+              Passage dans l'ordre 1 - 2 - 3 et 4<br>
+              L'objectif est d'avoir le plus de choses en 2
+            </aside>
+          </section>
+          <section data-background="#666633">
+            <h2>
+              Le diagramme de flux cumulés 
+            </h2>
+            <p><img src="i/CFD.png" alt="CFD"/></p>
+            <aside class="notes">
+              A mettre à jour chaque jour ou à chaque fin de cadence<br>
+              Permet des analyses fines
+            </aside>
+          </section>
+          <section data-background="#666633">
+            <h2>
+              Les 5 pourquoi
+            </h2>
+            <p>Ma voiture ne démarre pas (le problème)</p>
+            <ul style="list-style-type: none">
+              <li><i>pourquoi :</i> La batterie n'est pas chargée.</li>
+              <li><i>pourquoi :</i> L'alternateur ne fonctionne pas.</li>
+              <li><i>pourquoi :</i> La courroie de l'alternateur est cassée.</li>
+              <li><i>pourquoi :</i> J'ai dépassé la durée préconisée par le constructeur et la courroie était usée.</li>
+              <li><i>pourquoi :</i> Je n'ai pas respecté les préconisations du constructeur (la cause première).</li>
+            </ul>
+            <aside class="notes">
+              Répondre avec des choses factuelles
+            </aside>
+          </section>
+          <section data-background="#666633">
+            <h2>
+              Les 5 pourquoi
+            </h2>
+            <p> (le problème)</p>
+            <ul style="list-style-type: none">
+              <li><i>pourquoi :</i> La batterie n'est pas chargée.</li>
+              <li><i>pourquoi :</i> L'alternateur ne fonctionne pas.</li>
+              <li><i>pourquoi :</i> La courroie de l'alternateur est cassée.</li>
+              <li><i>pourquoi :</i> J'ai dépassé la durée préconisée par le constructeur et la courroie était usée.</li>
+              <li><i>pourquoi :</i> Je n'ai pas respecté les préconisations du constructeur (la cause première).</li>
+            </ul>
+          </section>
+          <section data-background="#666633">
+            <h2>
+              La théorie des flux
+            </h2>
+            <p>Image d'embouteillage, règle des 60, 80% (avec le graphique), comment répond-on au imprévus:
+             objecif 80%. Slide suivant : que faire pendant les 20% qui reste</p>
+            <aside class="notes">
+            </aside>
           </section>
           <section data-background="#666633">
             <h2>
@@ -1309,35 +1589,21 @@
           </section>
           <section data-background="#FFF">
             <h2>
-              Le Sprint Planning peut durer<br>jusqu'à 8 heures.
+              ????
             </h2>
             <aside class="notes">
-              Oui mais c'est un maximum si le sprint dure 1 mois.
+              Réponse
             </aside>
           </section>
           <section data-background="#FFF">
             <h2>
-              La présence du PO au Daily Scrum est indispensable.
+              ????
             </h2>
           </section>
           <section data-background="#FFF">
             <h2>
-              Pendant le Daily Scrum, le Scrum Master affecte les tâches aux membres de l'équipe.
+              Pendant le Daily Meeting, le manager affecte les tâches aux membres de l'équipe.
             </h2>
-          </section>
-          <section data-background="#FFF">
-            <h3>Le sprint de 3 semaines a commencé vendredi, avec une équipe de 10 personnes.
-            Le lundi lors du scrum du matin, on apprend qu’un développeur s’est cassé le bras droit au ski, il est plâtré pour une semaine.
-            </h3>
-            <ol>
-                <li>Le Scrum Master interdit le ski à toute l’équipe jusqu’à la fin de la release</li>
-                <li>L’équipe diminue sa capacité sur le sprint en enlevant des stories au périmètre</li>
-                <li>On lui trouve un remplaçant</li>
-                <li>On verra ce que ça donne et en attendant on lui achète une souris pour gaucher</li>
-            </ol>
-            <aside class="notes">
-              Réponse 4, il est trop tôt pour retirer du périmètre.
-            </aside>
           </section>
           <section data-background="#FFF">
             <h2>
@@ -1347,7 +1613,7 @@
           </section>
           <section data-background="#FFF">
             <h2>
-              En fin de Sprint Scrum, on doit livrer le produit en production.
+              ????
             </h2>
             <aside class="notes">
               Non, pas obligatoirement. On parle de Realease.
@@ -1453,8 +1719,7 @@
             - <a href="http://www.bouzin-agile.fr/?post/2013/03/12/KISS-Keep-it-Simple-Stupid">Illustrations du KISS</a> empruntées au site bouzin-agile<br>
             - <a href="http://www.derekhuether.com/2011/07/07/waste-in-software-projects/">Waste In Software Projects</a>, de l'usage des fonctions développées<br>
             - Photo de tableau agile empruntée au site <a href="http://theagilepirate.net/">The Agile Pirate</a><br>
-            - <a href="http://marshmallowchallenge.com">Marshmallow Challenge</a> et illustration en provenance du site éponyme<br>
-            - Le <a href="http://www.aubryconseil.com/serie/Le%20quiz%20Scrum">Quizz Scrum</a> de Claude Aubry
+            - <a href="http://www.emmanuelgeorjon.com/la-matrice-deisenhower-5668/">Matrice d'Eisenhower</a> de Emmanuel Georjon<br>
             </p>
         </section>
       </div>
