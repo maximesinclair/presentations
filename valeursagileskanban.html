@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Découverte des Valeurs Agiles</title>
+    <title>Découverte du Kanban</title>
 
     <meta name="description" content="A simple presentation of the values behind agile methods.">
     <meta name="author" content="Maxime">
@@ -419,7 +419,8 @@
           <section data-background="#5488C3">
             <h2>Le Manifeste Agile</h2>
             <p>
-              Nous découvrons comment mieux développer des logiciels par la pratique et en aidant les autres à le faire.<br>
+              Nous découvrons comment mieux développer des <span style="color: lightgreen">produits
+              et services</span> par la pratique et en aidant les autres à le faire.<br>
               Ces expériences nous ont amenés à valoriser :
             </p>
             <p class="manifest">
@@ -748,15 +749,6 @@
             <h2>Au final, encore plus de valeur</h2>
             <p><img src="i/adaptation2.png" alt="Agile" width="75%"></p>
           </section>
-          <section data-background="#3D3D3D">
-            <h2>Amélioration Continue</h2>
-            <p><img src="i/pdca.png"></p>
-            <aside class="notes">
-              Roue de Deming<br>
-              Amélioration sur les pratiques, les techniques<br>
-              Importance de la mesure, les KPI, pour les décisions
-            </aside>
-          </section>
         </section>
         <section id="manifestisback">
           <section data-background="i/snowbirdgondola.jpg">
@@ -1081,7 +1073,7 @@
           </section>
         </section>
         <section id="pizzagame">
-          <section data-background="i/toyotamotorplant1950.jpg">
+          <section data-background="i/pizzeria.jpg">
             <h1>
               Ouvrons notre pizzeria
             </h1>
@@ -1101,7 +1093,8 @@
               <li>des feuilles blanches A4</li>
               <li>de la colle</li>
               <li>deux paires de ciseaux</li>
-              <li>un marqueur rouge</li>
+              <li>deux crayons rouge</li>
+              <li>un taille-crayon</li>
               <li>un four et son minuteur</li>
             </ul>
           </section>
@@ -1246,14 +1239,7 @@
               Mise en place pas à pas
             </h2>
             <p>
-              Courbe des flux cumulés CDDB, classes de service, type de carte, limites basses et hautes, buffer.
-            </p>
-            <p>
-              Définition des types de travaux, Inbox et Outbox (le système), Visualisation du processus
-              Les limites hautes (2xnbre pers -1) et basses (pour le goulet d'étranglement), limite par nbre d'avatars
-              Les règles aux interfaces, escalade
-              Daily meeting, Cadence, Mesure, Rétrospective
-
+              <img src="i/pasapas.png">
             </p>
           </section>
           <section data-background="#666633">
@@ -1268,6 +1254,7 @@
             <p>
               Chaque carte contient au moins les informations suivantes&nbsp;:
               <ul>
+                <li>Type de travail</li>
                 <li>Résumé de la tache</li>
                 <li>Date d'entrée</li>
                 <li>Date de sortie</li>
@@ -1475,6 +1462,17 @@
             <h2>
               S'améliorer par la collaboration et l'expérimentation
             </h2>
+            <p><img src="i/pdca.png"></p>
+            <aside class="notes">
+              Roue de Deming<br>
+              Amélioration sur les pratiques, les techniques<br>
+              Importance de la mesure, les KPI, pour les décisions
+            </aside>
+          </section>
+          <section data-background="#666633">
+            <h2>
+              S'améliorer par la collaboration et l'expérimentation
+            </h2>
             <h3>
               Roue de Deming : PDCA
             </h3>
@@ -1484,6 +1482,10 @@
               <li><b>Check.</b> Analyser les résultats, acquérir de l'expérience.</li>
               <li><b>Act.</b> Si l'expérience est réussie, modifier les règles pour entériner le changement</li>
             </ul>
+            <aside class="notes">
+              A pour Act, Adapt ou Abandon<br>
+              Importance de la mesure, les KPI, pour les décisions
+            </aside>
           </section>
           <section data-background="#666633">
             <h2>
@@ -1502,7 +1504,7 @@
               Quelques outils qui peuvent aider
             </h2>
             <ul style="list-style-type: square">
-              <li>Prioriser avec la matrice d'Eiseinhower ou le CoD</li>
+              <li>Prioriser avec la matrice d'Eiseinhower</li>
               <li>Suivre notre flux avec le CFD</li>
               <li>Eliminer les problèmes avec les 5 pourquoi</li>
               <li>Augmenter notre performance en évitant la surcharge</li>
@@ -1541,28 +1543,63 @@
               <li><i>pourquoi :</i> Je n'ai pas respecté les préconisations du constructeur (la cause première).</li>
             </ul>
             <aside class="notes">
-              Répondre avec des choses factuelles
+              Réponse courte avec des choses factuelles<br>
+              Identifiez des contre-mesures simples mais qui permettent de supprimer
+              définitvement le problème (poka-yoke ou détrompeur)
             </aside>
           </section>
           <section data-background="#666633">
             <h2>
               Les 5 pourquoi
             </h2>
-            <p> (le problème)</p>
+            <p>J'ai été pris en excès de vitesse (le problème)</p>
             <ul style="list-style-type: none">
-              <li><i>pourquoi :</i> La batterie n'est pas chargée.</li>
-              <li><i>pourquoi :</i> L'alternateur ne fonctionne pas.</li>
-              <li><i>pourquoi :</i> La courroie de l'alternateur est cassée.</li>
-              <li><i>pourquoi :</i> J'ai dépassé la durée préconisée par le constructeur et la courroie était usée.</li>
-              <li><i>pourquoi :</i> Je n'ai pas respecté les préconisations du constructeur (la cause première).</li>
+              <li><i>pourquoi :</i> En retard au travail.</li>
+              <li><i>pourquoi :</i> Réveillé en retard.</li>
+              <li><i>pourquoi :</i> Le réveil n'a pas sonné.</li>
+              <li><i>pourquoi :</i> Les piles étaient à plat.</li>
+              <li><i>pourquoi :</i> J'ai oublié de les remplacer (la cause première).</li>
             </ul>
+            <aside class="notes">
+              Contre-mesure : un réveil qui se branche sur secteur<br>
+              ou se mettre un rappel pour changer les piles tous les 6 mois.
+            </aside>
           </section>
           <section data-background="#666633">
             <h2>
               La théorie des flux
             </h2>
-            <p>Image d'embouteillage, règle des 60, 80% (avec le graphique), comment répond-on au imprévus:
-             objecif 80%. Slide suivant : que faire pendant les 20% qui reste</p>
+            <p><img src="i/formule-allen-cuneen.jpg"/></p>
+            <p>80% d'occupation est la cible à viser</p>
+            <aside class="notes">Loi de Little
+            </aside>
+          </section>
+          <section data-background="i/trafficjam.jpg">
+            <h2>
+              La théorie des flux
+            </h2>
+            <p>Vous n'y croyez pas et pourtant !</p>
+            <aside class="notes">
+              Comment traiter les imprévus si tout le monde est occupé à 100%.
+            </aside>
+          </section>
+          <section data-background="#666633">
+            <h2>
+              La théorie des flux
+            </h2>
+            <p>Vidéo de l'eau</p>
+            <aside class="notes">
+              Comment traiter les imprévus si tout le monde est occupé à 100%.
+            </aside>
+          </section>
+          <section data-background="#666633">
+            <h2>
+              La théorie des flux
+            </h2>
+            <h3>Mais que faire 20% du temps ?</h3>
+            <p>Aider les autres</p>
+            <p>Apprendre et pratiquer de nouvelles compétences</p>
+            <p>Améliorer le système Kanban</p>
             <aside class="notes">
             </aside>
           </section>
@@ -1589,21 +1626,30 @@
           </section>
           <section data-background="#FFF">
             <h2>
-              ????
+              Quel est le time-boxing du stand-up meeting&nbsp;?
             </h2>
+            <ol>
+              <li>5 min</li>
+              <li>10 min</li>
+              <li>Aussi long que nécessaire</li>
+              <li>15 min</li>
+            </ol>            
             <aside class="notes">
-              Réponse
+              Réponse 15 min
             </aside>
-          </section>
-          <section data-background="#FFF">
-            <h2>
-              ????
-            </h2>
           </section>
           <section data-background="#FFF">
             <h2>
               Pendant le Daily Meeting, le manager affecte les tâches aux membres de l'équipe.
             </h2>
+          </section>
+          <section data-background="#FFF">
+            <h2>
+              Une prime sur objectif augmente ma motivation intrinsèque. 
+            </h2>
+            <aside class="notes">
+              Réponse
+            </aside>
           </section>
           <section data-background="#FFF">
             <h2>
@@ -1613,27 +1659,21 @@
           </section>
           <section data-background="#FFF">
             <h2>
-              ????
+              Kanban est un mot japonnais qui veut dire&nbsp;:
             </h2>
-            <aside class="notes">
-              Non, pas obligatoirement. On parle de Realease.
-            </aside>
-          </section>
-          <section data-background="#FFF">
-            <h3>Une story planifiée pour le prochain sprint est jugée finalement inutile par le Product Owner.</h3>
             <ol>
-              <li>On la supprime</li>
-              <li>On la fait quand même car elle est dans le plan de release</li>
-              <li>On la remplace par une autre de même taille et on la garde en fin de backlog</li>
-              <li>On diminue sa priorité</li>
+              <li>Flux</li>
+              <li>Carte</li>
+              <li>Etiquette</li>
+              <li>Processus</li>
             </ol>
             <aside class="notes">
-              Réponse 1
+              Etiquette
             </aside>
           </section>
           <section data-background="#FFF">
             <h2>
-              Dans l'équipe Scrum,<br>il n'y a ni business analyst ni testeur,<br>il n'y a que des programmeurs.
+              Le Kanban est une méthode de gestion de production en flux poussé.
             </h2>
           </section>
           <section data-background="#FFF">
@@ -1642,18 +1682,9 @@
             </h2>
           </section>
           <section data-background="#FFF">
-            <h3>Une personne dans l’équipe perturbe les autres. Vous êtes Scrum Master, comment réagissez-vous ?</h3>
-            <ol>
-              <li>Vous la virez de l'équipe, la majorité est d’accord</li>
-              <li>Vous ne faites rien, il n’y a pas de chef avec Scrum</li>
-              <li>Vous faites un rapport à la direction</li>
-              <li>Vous l’invitez à boire un coup pour lui proposer d’être le Scrum Master du prochain sprint</li>
-            </ol>
-          </section>
-          <section data-background="#FFF">
             <h2>
               Dans un sytème kanban, il est possible de faire revenir une carte à l’étape précédente
-              (en cas de bug par exemple).
+              (en cas d'anomalie par exemple).
             </h2>
           </section>
           <section data-background="#FFF">
@@ -1677,7 +1708,7 @@
           </section>
           <section data-background="#FFF">
             <h2>
-              Développer un logiciel en agile est plus rapide.
+              Développer un produit en agile est plus rapide.
             </h2>
           </section>
         </section>
