@@ -9,16 +9,15 @@
     <meta name="description" content="How to become an awesome Product Owner.">
     <meta name="author" content="Maxime">
 
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-
-    <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme">
+    
     <style type="text/css">
 
-      @import url(./lib/font/mouse-memoirs/mouse-memoirs.css);
+      @import url(./dist/theme/fonts/mouse-memoirs/mouse-memoirs.css);
 
       section.lightbackground, section.lightbackground h1, section.lightbackground h2 {
         color: #555;
@@ -40,9 +39,6 @@
       div.reveal small {
         font-size: 80%;
       }
-      div.reveal p.manifest {
-        font-size: 80%;
-      }
       /* No image background and no border */
       div.reveal section img {
         background-color: transparent;
@@ -50,36 +46,9 @@
         box-shadow: none;
         margin: 0;
       }
-      /* Photo shadow */
-      div.reveal section img.photo {
-        box-shadow: 0 0 40px #000;
-      }
-
       /* small align */
       div.slides section small {
         vertical-align: middle;
-      }
-
-      .lightcontrast {
-        background-color: rgba(0, 0, 0, 0.7);
-      }
-      /* No image background
-      section#adaptation section img {
-        background-color: transparent;
-        box-shadow: none;
-      } */
-      section#pratiques .def {
-        background-color: #088;
-        border-radius: 10px;
-        padding: 10px 20px;
-        text-align: left;
-      }
-      section#pratiques ul.goal {
-        background-color: #9AB45A;
-        border-radius: 10px;
-        margin: 0;
-        padding: 10px 20px 10px 50px;
-        text-align: left;
       }
 
       section#bdd ul {
@@ -116,22 +85,7 @@
       }
 
     </style>
-    <!-- Code syntax highlighting
-    <link rel="stylesheet" href="lib/css/zenburn.css">
-    -->
 
-    <!-- Printing and PDF exports -->
-    <script>
-      var link = document.createElement( 'link' );
-      link.rel = 'stylesheet';
-      link.type = 'text/css';
-      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-      document.getElementsByTagName( 'head' )[0].appendChild( link );
-    </script>
-
-    <!--[if lt IE 9]>
-    <script src="lib/js/html5shiv.js"></script>
-    <![endif]-->
   </head>
 
   <body>
@@ -142,7 +96,7 @@
         <section data-background="i/flyingbirds.gif">
           <h1>En tant que Product Owner</h1>
           <p>
-            <small>Créé avec &hearts;&hearts;&hearts; en novembre 2015 et revu en mai 2017</small><br>
+            <small>Créé avec &hearts;&hearts;&hearts; en novembre 2015 et revu en octobre 2020</small><br>
             <small>F pour le fullscreen et S pour les speakernotes</small>
           </p>
         </section>
@@ -440,7 +394,7 @@
               Quels sont ses buts ?<br>
               Ce n'est pas un profil, ni un rôle, ni un segment marketing.<br>
               C'est une représentation fictive d'une utilisateur type.<br><br>
-			  Inventé par Alan Cooper, le créateur de VB
+              Inventé par Alan Cooper, le créateur de VB
             </p>
           </aside>
         </section>
@@ -1190,34 +1144,30 @@
     </div>
   </div>
 
-  <script src="lib/js/head.min.js"></script>
-  <script src="js/reveal.js"></script>
-
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
   <script>
-
-    // Full list of configuration options available at:
-    // https://github.com/hakimel/reveal.js#configuration
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
     Reveal.initialize({
-      controls: true,
-      progress: true,
-      history: true,
-      center: true,
-      slideNumber: true,
-
-      transition: 'slide', // none/fade/slide/convex/concave/zoom
-
-      // Optional reveal.js plugins
-      dependencies: [
-        { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-        // { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-        // { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-        { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-        { src: 'plugin/zoom-js/zoom.js', async: true },
-        { src: 'plugin/notes/notes.js', async: true }
-      ]
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+        // The "normal" size of the presentation, aspect ratio will
+        // be preserved when the presentation is scaled to fit different
+        // resolutions. Can be specified using percentage units.
+        width: 1300,
+        height: 800,
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
     });
-
-  </script>
+  </script> 
 
 </body>
 </html>

@@ -9,16 +9,15 @@
     <meta name="description" content="A simple presentation of the values behind agile methods.">
     <meta name="author" content="Maxime">
 
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css" id="theme">
 
-    <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/black.css" id="theme">
     <style type="text/css">
 
-      @import url(./lib/font/mouse-memoirs/mouse-memoirs.css);
+      @import url(./dist/theme/fonts/mouse-memoirs/mouse-memoirs.css);
 
       section.lightbackground, section.lightbackground h1, section.lightbackground h2 {
         color: #555;
@@ -32,6 +31,9 @@
       div.reveal h2, div.reveal h3 {
         font-family: 'Mouse Memoirs', sans-serif;
         letter-spacing: 0.05em;
+      }
+      div.reveal p, div.reveal ul, div.reveal ol {
+        font-size: smaller;
       }
       div.reveal ul ul {
         font-size: smaller;
@@ -102,22 +104,7 @@
         padding: 0 0 0.6em 130px;
       }
     </style>
-    <!-- Code syntax highlighting
-    <link rel="stylesheet" href="lib/css/zenburn.css">
-    -->
 
-    <!-- Printing and PDF exports -->
-    <script>
-      var link = document.createElement( 'link' );
-      link.rel = 'stylesheet';
-      link.type = 'text/css';
-      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-      document.getElementsByTagName( 'head' )[0].appendChild( link );
-    </script>
-
-    <!--[if lt IE 9]>
-    <script src="lib/js/html5shiv.js"></script>
-    <![endif]-->
   </head>
 
   <body>
@@ -128,7 +115,7 @@
           <section data-background="i/planebackground.jpg">
             <h1>Découverte des valeurs agiles</h1>
             <p>
-              <small>Créé avec &hearts;&hearts;&hearts; en 2015 et revu en août 2019</small><br>
+              <small>Créé avec &hearts;&hearts;&hearts; en 2015 et revu en octobre 2020</small><br>
               <small>F pour le fullscreen et S pour les speakernotes</small>
             </p>
           </section>
@@ -420,7 +407,7 @@
           <section data-background="#5488C3">
             <h2>The Agile Manifesto</h2>
             <p>
-              We are uncovering better ways of developing software by doing it and helping others do it.<br>
+              We are uncovering better ways of developing software<br/>by doing it and helping others do it.<br>
               Through this work we have come to value:
             </p>
             <p class="manifest">
@@ -429,13 +416,13 @@
               <strong>Customer collaboration</strong> over <small>contract negotiation</small><br>
               <strong>Responding to change</strong> over <small>following a plan</small><br>
               <br>
-              That is, while there is value in the items on the right, we value the items on the left more.
+              That is, while there is value in the items on the right,<br/>we value the items on the left more.
             </p>
           </section>
           <section data-background="#5488C3">
             <h2>Le Manifeste Agile</h2>
             <p>
-              Nous découvrons comment mieux développer des logiciels par la pratique et en aidant les autres à le faire.<br>
+              Nous découvrons comment mieux développer des logiciels<br/>par la pratique et en aidant les autres à le faire.<br>
               Ces expériences nous ont amenés à valoriser :
             </p>
             <p class="manifest">
@@ -444,7 +431,7 @@
               <strong>La collaboration avec les clients</strong> plus que <small>la négociation contractuelle</small><br>
               <strong>L’adaptation au changement</strong> plus que <small>le suivi d'un plan</small><br>
               <br>
-              Nous reconnaissons la valeur des seconds éléments, mais privilégions les premiers.
+              Nous reconnaissons la valeur des seconds éléments,<br/>mais privilégions les premiers.
             </p>
           </section>
         </section>
@@ -1834,34 +1821,26 @@
       </div>
     </div>
 
-    <script src="lib/js/head.min.js"></script>
-    <script src="js/reveal.js"></script>
-
-    <script>
-
-      // Full list of configuration options available at:
-      // https://github.com/hakimel/reveal.js#configuration
-      Reveal.initialize({
-        controls: true,
-        progress: true,
-        history: true,
-        center: true,
-        slideNumber: true,
-
-        transition: 'slide', // none/fade/slide/convex/concave/zoom
-
-        // Optional reveal.js plugins
-        dependencies: [
-          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          // { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          // { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-          { src: 'plugin/zoom-js/zoom.js', async: true },
-          { src: 'plugin/notes/notes.js', async: true }
-        ]
-      });
-
-    </script>
-
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+          // Help the user learn the controls by providing hints, for example by
+          // bouncing the down arrow when they first encounter a vertical slide
+          controlsTutorial: false,
+		  // Add the current slide number to the URL hash so that reloading the
+		  // page/copying the URL will return you to the same slide
+		  hash: true,
+		  // Learn about plugins: https://revealjs.com/plugins/
+		  plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+		});
+	</script>	
+	
+	
   </body>
 </html>
