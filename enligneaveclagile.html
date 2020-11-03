@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>En ligne avec l'Agile</title>
+	<meta name="description" content="Welcome to online Agility.">
+	<meta name="author" content="Vanessa and Maxime">
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+	<style type="text/css">
+		@import url(./dist/theme/fonts/mouse-memoirs/mouse-memoirs.css);
+     /* Font and shadow for h1, h2, h3 */
+		div.reveal h1 {
+      font-family: 'Mouse Memoirs', sans-serif;
+      letter-spacing: 4px;
+      text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);
+    }
+    div.reveal h2, div.reveal h3 {
+      font-family: 'Mouse Memoirs', sans-serif;
+      letter-spacing: 0.05em;
+    }		
+	</style>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section id="title">
+				<section data-background-image="i/parisautomne.jpg">
+					<h1>En ligne avec l'Agile</h1>
+					<p>
+						<small>Créé avec &hearts; en novembre 2020</small><br>
+						<small>F pour le fullscreen et S pour les speakernotes</small>
+					</p>
+				</section>
+				<section  data-background="#daa766">
+					<h2>Qui sommes-nous ?</h2>
+					<p>1 minute pour trouver un objet qui va vous aider à vous présenter&nbsp;:<br/>
+						nom, fonction, connaissance de l'agilité et pourquoi cet objet
+					</p>
+					<!--<iframe width="600" height="200" src="https://e.ggtimer.com/1min"></iframe>
+					https://css-tricks.com/how-to-create-an-animated-countdown-timer-with-html-css-and-javascript/ 
+					https://github.com/PButcher/flipdown
+				  -->
+				</section>
+				<section data-background="#daa766">
+					<h2>Plan</h2>
+					<ol>
+						<li>Histoire de l'Agile</li>
+						<li>Un atelier plein de principes</li>
+						<li>La suite de l'histoire</li>
+						<li>Pause</li>
+						<li>Un sprint Scrum</li>
+						<li>Interrogation</li>
+					</ol>
+				</section>
+			</section>
+			<section id="histoire">
+				<section data-background-image="i/parisautomne.jpg">
+					<h1>Un peu d'histoire</h1>
+					<p>D'où vient le mouvement agile ?</p>
+					<p>Pourquoi ce mot ?</p>
+				</section>
+				<section data-background="#82b7d6">suite</section>
+			</section>
+			<section id="principes">
+				<section data-background-image="i/parisautomne.jpg">
+					<h1>Atelier plein de Principes</h1>
+					<p>Le manifeste présente 12 principes agiles.</p>
+				</section>
+			</section>
+			<section id="newagile">
+				<section data-background-image="i/parisautomne.jpg">
+					<h1>Agile maintenant</h1>
+					<p>Où va le mouvement agile ?</p>
+					<p>C'est quoi le futur ?</p>
+				</section>
+			</section>
+			<section id="pause">
+				<h1>Pause</h1>
+			</section>
+			<section id="scrum">
+				<section data-background-image="i/parisautomne.jpg">
+					<h1>Scrum</h1>
+					<p>Focus sur LE framework agile.</p>
+				</section>
+			</section>
+			<section id="sprintplanning">
+				<section data-background="#E6E6FA">
+					<h1>Sprint Planning</h1>
+					<p>.</p>
+				</section>
+			</section>
+			<section id="sprint">
+				<section data-background="#E6E6FA">
+					<h1>Développement</h1>
+					<p>.</p>
+				</section>
+			</section>
+			<section id="sprintreview">
+				<section data-background="#E6E6FA">
+					<h1>Sprint Review</h1>
+					<p>.</p>
+				</section>
+			</section>
+			<section id="retro">
+				<section data-background="#E6E6FA">
+					<h1>Rétrospective</h1>
+					<p>.</p>
+				</section>
+			</section>
+			<section id="quiz">
+				<section data-background-image="i/parisautomne.jpg">
+					<h1>Quiz</h1>
+					<p>.</p>
+				</section>
+			</section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			// Help the user learn the controls by providing hints, for example by
+			// bouncing the down arrow when they first encounter a vertical slide
+			controlsTutorial: false,
+			// Add the current slide number to the URL hash so that reloading the
+			// page/copying the URL will return you to the same slide
+			hash: true,
+			// The "normal" size of the presentation, aspect ratio will
+			// be preserved when the presentation is scaled to fit different
+			// resolutions. Can be specified using percentage units.
+			width: 1300,
+			height: 800,
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
