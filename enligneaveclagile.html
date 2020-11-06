@@ -41,8 +41,12 @@
 				</section>
 				<section  data-background="#daa766">
 					<h2>Qui sommes-nous ?</h2>
-					<p>1 minute pour trouver un objet qui va vous aider à vous présenter&nbsp;:<br/>
+					<p>1 minute pour trouver un objet qui va vous aider à vous présenter&nbsp;:<br>
 						nom, fonction, connaissance de l'agilité et pourquoi cet objet
+					</p>
+					<p style="text-align: left; border-bottom: 3px dashed #000;">
+							<img id="mario" src="i/mariorun.gif" width="256" height="256" 
+							style="position: relative; left: 0; transition: left 60s linear;">
 					</p>
 					<!--<iframe width="600" height="200" src="https://e.ggtimer.com/1min"></iframe>
 					https://css-tricks.com/how-to-create-an-animated-countdown-timer-with-html-css-and-javascript/ 
@@ -146,6 +150,12 @@
 			// Learn about plugins: https://revealjs.com/plugins/
 			plugins: [RevealHighlight, RevealNotes]
 		});
+		mario.onclick = function() {
+			mario.addEventListener('transitionend', function () {
+				mario.src = 'i/mariostop.gif';
+			});
+			mario.style.left = 'calc(100% - 256px)';
+		};
 	</script>
 </body>
 
