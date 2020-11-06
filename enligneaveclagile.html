@@ -18,7 +18,7 @@
      /* Font and shadow for h1, h2, h3 */
 		div.reveal h1 {
       font-family: 'Mouse Memoirs', sans-serif;
-      letter-spacing: 4px;
+      letter-spacing: 5px;
       text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);
     }
     div.reveal h2, div.reveal h3 {
@@ -33,7 +33,7 @@
 		<div class="slides">
 			<section id="title">
 				<section data-background-image="i/parisautomne.jpg">
-					<h1>En ligne avec l'Agile</h1>
+					<h1 style="font-size: 4em;">En ligne avec l'Agile</h1>
 					<p>
 						<small>Créé avec &hearts; en novembre 2020</small><br>
 						<small>F pour le fullscreen et S pour les speakernotes</small>
@@ -41,8 +41,12 @@
 				</section>
 				<section  data-background="#daa766">
 					<h2>Qui sommes-nous ?</h2>
-					<p>1 minute pour trouver un objet qui va vous aider à vous présenter&nbsp;:<br/>
+					<p>1 minute pour trouver un objet qui va vous aider à vous présenter&nbsp;:<br>
 						nom, fonction, connaissance de l'agilité et pourquoi cet objet
+					</p>
+					<p style="text-align: left; border-bottom: 3px dashed #000;">
+							<img id="mario" src="i/mariorun.gif" width="256" height="256" 
+							style="position: relative; left: 0; transition: left 60s linear;">
 					</p>
 					<!--<iframe width="600" height="200" src="https://e.ggtimer.com/1min"></iframe>
 					https://css-tricks.com/how-to-create-an-animated-countdown-timer-with-html-css-and-javascript/ 
@@ -67,7 +71,55 @@
 					<p>D'où vient le mouvement agile ?</p>
 					<p>Pourquoi ce mot ?</p>
 				</section>
-				<section data-background="#82b7d6">suite</section>
+				<section data-background="#82b7d6">
+					<h2>Les débuts du logiciel</h2>
+					<p>Par définition, l'histoire du logiciel est indissociable de l'histoire
+						 de l'ordinateur et pourtant ...
+					</p>
+					<p><img src="i/carteperfo.png">
+					</p>
+					<aside class="notes">
+						Le coût d'une heure de développeur est bien moins élevé que celui 
+						d'une heure de temps machine.<br/>
+						Le logiciel est livré gratuitement, seul le hardware est payant.
+					</aside>
+				</section>
+				<section data-background="#82b7d6">
+					<h2>L'histoire du logiciel débute en 1968</h2>
+					<p>
+						En octobre l'OTAN organise la première conférence consacrée au 
+						développement logiciel à Garmisch en RFA. On y parle <b>crise du logiciel</b>.
+					</p>
+					<p><img height="450" src="i/garmisch1968.jpg">
+					</p>
+					<aside class="notes">
+						C'est à la fin des années 60 que le développeur coûte plus cher que le temps machine.<br/>
+						C'est le début du Génie Logiciel. On parle languages de développement, outils et méthodes.
+					</aside>
+				 </section>
+				 <section data-background="#82b7d6">
+					<h2>La crise devient chaos</h2>
+					<p>Le Standish Group publie en 1995 le premier Chaos Report</p>
+					<blockquote>
+						&ldquo;Software development projects are in chaos, and we can no longer imitate the three
+						monkeys -- hear no failures, see no failures, speak no failures.&rdquo;
+					</blockquote>
+					<ul>
+						<li>250 milliards de $ dépensés par an aux USA</li>
+						<li>Seuls 16,2% des projets sont on-time et on-budget</li>
+					</ul>
+  				<aside class="notes">
+	 				</aside>
+				</section>
+				<section data-background="#82b7d6">
+					<h2>Industrialiser</h2>
+					<p>
+						On s'inspire du Taylorisme qui a fait ses preuves dans l'industrie et qui divise
+						le travail selon 2 axes.
+					</p>
+  				<aside class="notes">
+	 				</aside>
+				</section>
 			</section>
 			<section id="principes">
 				<section data-background-image="i/parisautomne.jpg">
@@ -144,8 +196,14 @@
 			width: 1300,
 			height: 800,
 			// Learn about plugins: https://revealjs.com/plugins/
-			plugins: [RevealHighlight, RevealNotes]
+			plugins: [RevealHighlight, RevealNotes],
 		});
+		mario.onclick = function() {
+			mario.addEventListener('transitionend', function () {
+				mario.src = 'i/mariostop.gif';
+			});
+			mario.style.left = 'calc(100% - 256px)';
+		};
 	</script>
 </body>
 
