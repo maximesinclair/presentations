@@ -24,7 +24,33 @@
     div.reveal h2, div.reveal h3 {
       font-family: 'Mouse Memoirs', sans-serif;
       letter-spacing: 0.05em;
-    }		
+    }
+		div.reveal ul ul {
+      font-size: smaller;
+    }
+		div.reveal strong {
+      font-size: 110%;
+    }
+    div.reveal small {
+      font-size: 80%;
+			vertical-align: middle;
+    }
+		div.reveal p.manifest {
+      font-size: 80%;
+    }
+		
+		div.value {
+			margin-top: 2em;
+      display: table;
+			width: 100%;
+    }
+		div.value .left, div.value .right {
+    	display: table-cell
+		}
+		div.value .left {
+    	width: 50%;
+ 		}
+
 	</style>
 </head>
 
@@ -53,7 +79,7 @@
 					https://github.com/PButcher/flipdown
 				  -->
 				</section>
-				<section data-background="#daa766">
+				<section id="toc" data-background="#daa766">
 					<h2>Plan</h2>
 					<ol>
 						<li>Histoire de l'Agile</li>
@@ -97,7 +123,33 @@
 						C'est le début du Génie Logiciel. On parle languages de développement, outils et méthodes.
 					</aside>
 				 </section>
-				 <section data-background="#82b7d6">
+				<section data-background="#82b7d6">
+					<h2>Industrialiser</h2>
+					<p>
+						On s'inspire du Taylorisme qui a fait ses preuves dans l'industrie<br>et qui divise
+						le travail selon 2 axes.<br><img height="450" src="i/decoupagetaylorisme.jpg">
+					</p>
+  				<aside class="notes">
+	 				</aside>
+				</section>
+				<section data-background="i/waterfall.png">
+					<h2>De la Méthode</h2>
+					<ul class="fragment lightcontrast">
+						<li>Un découpage en multiple phases.</li>
+						<li>Des phases découpées en étapes.</li>
+						<li>Des documents en abondance et toujours à valider.</li>
+						<li>Des équipes de spécialistes sans vue d'ensemble.</li>
+						<li>De la sous-traitance, de l'off-shore.</li>
+						<li>Un effet tunnel.</li>
+						<li>Beaucoup d'énergie passée à estimer, planifier, découper, affecter&nbsp;&hellip;</li>
+					</ul>
+					<aside class="notes">
+						SADT pour Structured Analysis and Design Technique, SDM pour System Development Methodology<br>
+						DoD-Std-2167 est un standard de développement logiciel du DOD qui impose une méthode en cascade<br>
+						Merise en France          
+					</aside>
+				</section>
+				<section data-background="#82b7d6">
 					<h2>La crise devient chaos</h2>
 					<p>Le Standish Group publie en 1995 le premier Chaos Report</p>
 					<blockquote>
@@ -112,14 +164,133 @@
 	 				</aside>
 				</section>
 				<section data-background="#82b7d6">
-					<h2>Industrialiser</h2>
+					<h2>Une ingénierie pas comme les autres</h2>
 					<p>
-						On s'inspire du Taylorisme qui a fait ses preuves dans l'industrie et qui divise
-						le travail selon 2 axes.
+						Un groupe d'irréductibles skieurs refuse<br>
+						l'analogie de la construction.
 					</p>
-  				<aside class="notes">
-	 				</aside>
+					<p class="fragment">
+						Coder n'est pas fabriquer.<br>
+						Fabriquer, c'est compiler.<br><br>
+						La fabrication est la phase la moins coûteuse, elle est automatisée.<br>
+						La conception, phase créative, qui exige de la compétence,<br>va jusqu'à l'écriture du code.
+					</p>
+					<aside class="notes">
+						<ul>
+							<li>Jack Reeves suggère qu'en réalité le code source est un document de conception</li>
+							<li>http://www.bleading-edge.com/Publications/C%2B%2BJournal/Cpjour2.htm</li>
+						</ul>
+					</aside>
 				</section>
+				<section id="lightmethods" data-background="#82b7d6">
+					<h2>Les méthodes légères</h2>
+					<p>
+						En réaction aux "plan-driven methodologies" ou "méthodes&nbsp;lourdes"
+					</p>
+					<ul>
+						<li>Dynamic systems development method ou DSDM [1994]</li>
+						<li>Scrum [1995]</li>
+							<ul><li>par Ken Schwaber et Jeff Sutherland</li></ul>
+						<li>eXtreme Programming [1996]</li>
+							<ul><li>par Kent Beck, Ward Cunningham et Ron Jeffries</li></ul>
+						<li>Crystal Clear [1996]</li>
+							<ul><li>par Alistair Cockburn</li></ul>
+						<li>Feature-Driven Development ou FDD [1997]</li>
+							<ul><li>par Jeff De Luca</li></ul>
+					</ul>
+					<aside class="notes">
+						<ul>
+							<li>DSDM cherche à structurer le développement RAD</li>
+							<li>XP est très orienté technique de développement, tests unitaires, pair programming</li>
+						</ul>
+					</aside>
+				</section>
+				<section data-background="i/snowbirdgondola.jpg">
+					<h2>2 jours à la montagne</h2>
+					<p>
+						Du 11 au 13 février 2001, 17 "organizational anarchists" se retrouvent à Snowbird dans l'Utah,
+						pour discuter méthodes de développement logiciel.
+					</p>
+					<p>
+						Ils aboutissent à la signature du <strong>Manifeste Agile</strong>
+					</p>
+					<aside class="notes">
+						<p>
+							Le terme agile vient d'agile manufacturing qui tente de rattraper les Japonais. A REFORMULER
+						</p>
+					</aside>
+				</section>
+				<section data-background="#82b7d6">
+					<h2>Le Manifeste Agile</h2>
+					<p>
+						Nous découvrons comment mieux développer des logiciels<br/>par la pratique et en aidant les autres à le faire.<br>
+						Ces expériences nous ont amenés à valoriser :
+					</p>
+					<p class="manifest">
+						<strong>Les individus et leurs interactions</strong> plus que <small>les processus et les outils</small><br>
+						<strong>Un logiciel opérationnel</strong> plus qu'<small>une documentation exhaustive</small><br>
+						<strong>La collaboration avec les clients</strong> plus que <small>la négociation contractuelle</small><br>
+						<strong>L’adaptation au changement</strong> plus que <small>le suivi d'un plan</small><br>
+					</p>
+					<p>Nous reconnaissons la valeur des seconds éléments,<br/>mais privilégions les premiers.</p>
+				</section>
+				<section data-background="#82b7d6">
+					<h2>Individus et Interactions</h2>
+					<p>
+						Les individus et leurs interactions plus que les processus et les outils
+					</p>
+					<div class="value">
+						<div class="left">
+							Motivation<br>Petite équipe<br>Focus
+						</div>
+						<div class="right">
+							Méthode<br>Jira<br>Eclipse
+						</div>
+					</div>
+				</section>
+				<section data-background="#82b7d6">
+					<h2>Une solution qui apporte de la valeur</h2>
+					<p>
+						Un logiciel opérationnel plus qu'une documentation exhaustive
+					</p>
+					<div class="value">
+						<div class="left">
+							Motivation<br>Petite équipe<br>Focus
+						</div>
+						<div class="right">
+							Méthode<br>Jira<br>Eclipse
+						</div>
+					</div>
+				</section>
+				<section data-background="#82b7d6">
+					<h2>Collaboration avec les clients</h2>
+					<p>
+						La collaboration avec les clients plus que la négociation contractuelle
+					</p>
+					<div class="value">
+						<div class="left">
+							Motivation<br>Petite équipe<br>Focus
+						</div>
+						<div class="right">
+							Méthode<br>Jira<br>Eclipse
+						</div>
+					</div>
+				</section>
+				<section data-background="#82b7d6">
+					<h2>Adaptation au changement</h2>
+					<p>
+						L’adaptation au changement plus que le suivi d'un plan
+					</p>
+					<div class="value">
+						<div class="left">
+							Motivation<br>Petite équipe<br>Focus
+						</div>
+						<div class="right">
+							Méthode<br>Jira<br>Eclipse
+						</div>
+					</div>
+				</section>
+
 			</section>
 			<section id="principes">
 				<section data-background-image="i/parisautomne.jpg">
@@ -133,6 +304,15 @@
 					<p>Où va le mouvement agile ?</p>
 					<p>C'est quoi le futur ?</p>
 				</section>
+				<section data-background="#82b7d6">
+					<h2>Diffusion chez JCDecaux</h2>
+					<p>
+						2013 premier projet pilote sur le domaine Affichage, 2014 reprise en interne de la maintenance 
+						du système de vente avec SAFe. Puis déploiement sur les autres périmètres, au fur et à mesure,
+						chacun adoptant le framework qui lui semble le plus approprié&nbsp;: Scrum, Kanban. 
+					</p>
+				</section>
+
 			</section>
 			<section id="pause">
 				<h1>Pause</h1>
