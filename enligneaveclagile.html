@@ -13,6 +13,8 @@
 	<link rel="stylesheet" href="dist/reveal.css">
 	<link rel="stylesheet" href="dist/theme/black.css" id="theme">
 
+	<link rel="stylesheet" href="mrtimer/mr-timer.css">
+
 	<style type="text/css">
 		@import url(./dist/theme/fonts/mouse-memoirs/mouse-memoirs.css);
      /* Font and shadow for h1, h2, h3 */
@@ -317,6 +319,7 @@
 					<p>
 						Vous avez 20 minutes.
 					</p>
+					<div class="mr-timer" data-timer-duration="20" style="width: 300px; height: 300px; margin: 50px auto 0;"></div>
 					<aside class="notes">
 						Et 20 minutes pour restituer ensuite
 					</aside>
@@ -431,6 +434,8 @@
 	<script src="dist/reveal.js"></script>
 	<script src="plugin/notes/notes.js"></script>
 	<script src="plugin/highlight/highlight.js"></script>
+	<script src="mrtimer/mr-timer.js"></script>
+
 	<script>
 		// More info about initialization & config:
 		// - https://revealjs.com/initialization/
